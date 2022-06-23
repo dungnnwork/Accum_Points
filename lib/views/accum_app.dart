@@ -17,11 +17,11 @@ class AccumApp extends StatefulWidget {
 class _AccumAppState extends State<AccumApp> {
   int seclectedIndex = 0;
   List<Widget> tapIcons = [
-    Image.asset("assets/icons/home_black.png"),
-    Image.asset("assets/icons/endow.png"),
-    Image.asset("assets/icons/qrcode.png"),
-    Image.asset("assets/icons/partner.png"),
-    Image.asset("assets/icons/profile.png"),
+    Image.asset("assets/icons/icons_bottombar/home_black.png"),
+    Image.asset("assets/icons/icons_bottombar/endow.png"),
+    Image.asset("assets/icons/icons_bottombar/qrcode.png"),
+    Image.asset("assets/icons/icons_bottombar/partner.png"),
+    Image.asset("assets/icons/icons_bottombar/profile.png"),
   ];
   List<Widget> pages = [
    const HomePage(), const EndowPage(), const QRPage(), const PartnerPage(), const ProfilePage(),
@@ -37,52 +37,73 @@ class _AccumAppState extends State<AccumApp> {
     );
   }
   Widget bottomBar(){
-    return BottomNavigationBar(
-
-      fixedColor: Colors.black,
-      showSelectedLabels: true,
-      currentIndex: seclectedIndex,
-      onTap: onTapHandel,
-      type: BottomNavigationBarType.fixed,
-      items:  <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            activeIcon: Image.asset(
-              "assets/icons/home_black.png",
-              color: activeItemColors,
-              ),
-            icon: tapIcons[0],
-            label: "Trang chủ",
-            ),
-          BottomNavigationBarItem(
-            activeIcon: Image.asset(
-              "assets/icons/endow.png",
-              color: activeItemColors,
-              ),
-            icon: tapIcons[1],
-            label: 'Ưu đãi',
-            ),
-          BottomNavigationBarItem(
-            icon: tapIcons[2],
-            label: 'Quét mã',
-            ),
-          BottomNavigationBarItem(
-            activeIcon: Image.asset(
-              "assets/icons/partner.png",
-              color: activeItemColors,
-              ),
-            icon: tapIcons[3],
-            label: 'Đối tác',
-            ),
-          BottomNavigationBarItem(
-            activeIcon: Image.asset(
-              "assets/icons/profile.png",
-              color: activeItemColors,
-              ),
-            icon: tapIcons[4],
-            label: 'Cá nhân',
-            ),      
+    return Container(
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            offset:const Offset(0, -10),
+            blurRadius: 10.0,
+            color: const Color(0xffd9d9d9).withOpacity(0.25),
+          ),
         ],
-      );
+      ),
+      child: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(10.0),
+          topRight: Radius.circular(10.0),
+        ),
+        child: BottomNavigationBar(
+          backgroundColor:const Color(0xfffdfdfd),
+          fixedColor: Colors.black,
+          showSelectedLabels: true,
+          currentIndex: seclectedIndex,
+          onTap: onTapHandel,
+          type: BottomNavigationBarType.fixed,
+          items:  <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                activeIcon: Image.asset(
+                  "assets/icons/icons_bottombar/home_black.png",
+                  color: activeItemColors,
+                  ),
+                icon: tapIcons[0],
+                label: "Trang chủ",
+                ),
+              BottomNavigationBarItem(
+                activeIcon: Image.asset(
+                  "assets/icons/icons_bottombar/endow.png",
+                  color: activeItemColors,
+                  ),
+                icon: tapIcons[1],
+                label: 'Ưu đãi',
+                ),
+              BottomNavigationBarItem(
+                activeIcon: Image.asset(
+                  "assets/icons/icons_bottombar/qrcode.png",
+                  color: activeItemColors,
+                  ),
+                icon: tapIcons[2],
+                label: 'Quét mã',
+                ),
+              BottomNavigationBarItem(
+                activeIcon: Image.asset(
+                  "assets/icons/icons_bottombar/partner.png",
+                  color: activeItemColors,
+                  ),
+                icon: tapIcons[3],
+                label: 'Đối tác',
+                ),
+              BottomNavigationBarItem(
+                activeIcon: Image.asset(
+                  "assets/icons/icons_bottombar/profile.png",
+                  color: activeItemColors,
+                  ),
+                icon: tapIcons[4],
+                label: 'Cá nhân',
+                ),      
+            ],
+          ),
+      ),
+    );
   }
   void onTapHandel(int index){
     setState(() {
