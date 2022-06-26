@@ -8,19 +8,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     home: AccumApp(),
-     theme: ThemeData(
-      fontFamily: "Open Sans",
-     ),
-     
+      home: const AccumApp(),
+      theme: ThemeData(
+        fontFamily: "Open Sans",
+      ),
     );
   }
 }
-
-
