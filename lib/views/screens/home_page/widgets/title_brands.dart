@@ -3,30 +3,35 @@ import 'package:flutter/material.dart';
 import '../../../../constants.dart';
 
 class TitleBrands extends StatelessWidget {
-  const TitleBrands({Key? key}) : super(key: key);
+  const TitleBrands({Key? key, required this.title, required this.onPress})
+      : super(key: key);
 
+  final String? title;
+  final Function? onPress;
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: getProportionateScreenHeight(40.6)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "Thương hiệu tích - tiêu điểm",
+            title!,
             style: TextStyle(
               color: kTextTitleBigColors,
               fontWeight: FontWeight.w600,
               fontSize: getProportionateScreenWidth(23.44),
             ),
           ),
-          TextButton(
-            onPressed: () {},
-            child: const Text(
+          GestureDetector(
+            onTap: onPress as void Function(),
+            child: Text(
               "Xem tất cả",
               style: TextStyle(
                 color: kTextPrimaryColors,
-                fontSize: 12.0,
+                fontSize: getProportionateScreenWidth(31.25),
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),

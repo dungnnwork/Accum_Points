@@ -3,7 +3,6 @@ import 'package:accum_points_app/views/component/background_page.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/brands.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/brands2.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/title_brands.dart';
-import 'package:accum_points_app/views/screens/home_page/widgets/title_brands2.dart';
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
 
@@ -104,37 +103,45 @@ class _HomePageState extends State<HomePage> {
             // ),
             // ],
             // ),
+
             Positioned(
               top: getProportionateScreenHeight(2.69),
               child: SingleChildScrollView(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.only(
-                    topLeft:
-                        Radius.circular(getProportionateScreenWidth(18.75)),
-                    topRight:
-                        Radius.circular(getProportionateScreenWidth(18.75)),
+                child: Container(
+                  width: SizeConfig().screenWidth,
+                  padding: EdgeInsets.symmetric(
+                      horizontal: getProportionateScreenWidth(20.83)),
+                  decoration: BoxDecoration(
+                    color: kBackgroundColors,
+                    boxShadow: [
+                      BoxShadow(
+                          offset: const Offset(0, -3),
+                          blurRadius: 4.0,
+                          color: kTextTitleBigColors.withOpacity(0.1)),
+                    ],
+                    borderRadius: BorderRadius.only(
+                      topLeft:
+                          Radius.circular(getProportionateScreenWidth(18.75)),
+                      topRight:
+                          Radius.circular(getProportionateScreenWidth(18.75)),
+                    ),
                   ),
-                  child: Container(
-                    width: SizeConfig().screenWidth,
-                    padding: EdgeInsets.symmetric(
-                        horizontal: getProportionateScreenWidth(20.83)),
-                    decoration: const BoxDecoration(
-                      color: kBackgroundColors,
-                    ),
-                    child: Column(
-                      children: const [
-                        // start text trademark
-                        TitleBrands(),
-                        // start image trademark
-                        SizedBox(height: 15.0),
-                        Brands(),
-                        SizedBox(height: 15.0),
-                        // start text preferential hunting
-                        TitleBrands2(),
-                        // start preferential hunting
-                        Brands2(),
-                      ],
-                    ),
+                  child: Column(
+                    children: [
+                      TitleBrands(
+                        title: 'Thương hiệu tích - tiêu điểm',
+                        onPress: () {},
+                      ),
+                      SizedBox(height: getProportionateScreenHeight(50.75)),
+                      const Brands(),
+                      SizedBox(height: getProportionateScreenHeight(406.0)),
+                      TitleBrands(
+                        title: 'Săn ưu đãi',
+                        onPress: () {},
+                      ),
+                      SizedBox(height: getProportionateScreenHeight(50.75)),
+                      Brands2(),
+                    ],
                   ),
                 ),
               ),

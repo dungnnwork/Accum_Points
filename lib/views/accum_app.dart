@@ -43,7 +43,7 @@ class _AccumAppState extends State<AccumApp> {
         boxShadow: [
           BoxShadow(
             offset: const Offset(0, -10),
-            blurRadius: 5.0,
+            blurRadius: 10.0,
             color: const Color(0xffd9d9d9).withOpacity(0.25),
           ),
         ],
