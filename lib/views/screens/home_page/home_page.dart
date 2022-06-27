@@ -104,45 +104,40 @@ class _HomePageState extends State<HomePage> {
             // ],
             // ),
 
-            Positioned(
-              top: getProportionateScreenHeight(2.69),
+            Container(
+              width: SizeConfig().screenWidth,
+              padding: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(20.83)),
+              decoration: BoxDecoration(
+                color: kBackgroundColors,
+                boxShadow: [
+                  BoxShadow(
+                      offset: const Offset(0, -3),
+                      blurRadius: 4.0,
+                      color: kTextTitleBigColors.withOpacity(0.1)),
+                ],
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(getProportionateScreenWidth(18.75)),
+                  topRight: Radius.circular(getProportionateScreenWidth(18.75)),
+                ),
+              ),
               child: SingleChildScrollView(
-                child: Container(
-                  width: SizeConfig().screenWidth,
-                  padding: EdgeInsets.symmetric(
-                      horizontal: getProportionateScreenWidth(20.83)),
-                  decoration: BoxDecoration(
-                    color: kBackgroundColors,
-                    boxShadow: [
-                      BoxShadow(
-                          offset: const Offset(0, -3),
-                          blurRadius: 4.0,
-                          color: kTextTitleBigColors.withOpacity(0.1)),
-                    ],
-                    borderRadius: BorderRadius.only(
-                      topLeft:
-                          Radius.circular(getProportionateScreenWidth(18.75)),
-                      topRight:
-                          Radius.circular(getProportionateScreenWidth(18.75)),
+                child: Column(
+                  children: [
+                    TitleBrands(
+                      title: 'Thương hiệu tích - tiêu điểm',
+                      onPress: () {},
                     ),
-                  ),
-                  child: Column(
-                    children: [
-                      TitleBrands(
-                        title: 'Thương hiệu tích - tiêu điểm',
-                        onPress: () {},
-                      ),
-                      SizedBox(height: getProportionateScreenHeight(50.75)),
-                      const Brands(),
-                      SizedBox(height: getProportionateScreenHeight(406.0)),
-                      TitleBrands(
-                        title: 'Săn ưu đãi',
-                        onPress: () {},
-                      ),
-                      SizedBox(height: getProportionateScreenHeight(50.75)),
-                      Brands2(),
-                    ],
-                  ),
+                    SizedBox(height: getProportionateScreenHeight(50.75)),
+                    const Brands(),
+                    SizedBox(height: getProportionateScreenHeight(406.0)),
+                    TitleBrands(
+                      title: 'Săn ưu đãi',
+                      onPress: () {},
+                    ),
+                    SizedBox(height: getProportionateScreenHeight(50.75)),
+                    Brands2(),
+                  ],
                 ),
               ),
             ),
