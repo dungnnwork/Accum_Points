@@ -22,6 +22,18 @@ class Brands extends StatelessWidget {
         "title": "Gemini coffee",
         "image": "assets/images/Logo-Gemini-Coffee.png",
       },
+      {
+        "title": "Gemini coffee",
+        "image": "assets/images/Logo-Gemini-Coffee.png",
+      },
+      {
+        "title": "The coffee house",
+        "image": "assets/images/the coffee house.png",
+      },
+      {
+        "title": "Gemini coffee",
+        "image": "assets/images/Logo-Gemini-Coffee.png",
+      },
     ];
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -30,7 +42,7 @@ class Brands extends StatelessWidget {
         children: List.generate(
             brands.length,
             (index) => Container(
-                  // padding:const EdgeInsets.fromLTRB(18.0, 0.0, 10.0, 0.0,),
+                  // padding:const EdgeInsets.fromLTRB(18.0, 0.0, 14.0, 0.0,),
                   padding: const EdgeInsets.only(
                     left: 18.0,
                   ),

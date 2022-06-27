@@ -32,6 +32,30 @@ class Brands2 extends StatelessWidget {
         "nameBrand": "Gemini",
         "point": "assets/images/200 points.png",
       },
+      {
+        "image": "assets/images/hello summer.png",
+        "title": "Ưu đãi giảm 50.000 đồng",
+        "nameBrand": "The coffee house",
+        "point": "assets/images/50 point.png",
+      },
+      {
+        "image": "assets/images/super sale.png",
+        "title": "Ưu đãi giảm 50.000 đồng",
+        "nameBrand": "Gemini",
+        "point": "assets/images/200 points.png",
+      },
+      {
+        "image": "assets/images/hello summer.png",
+        "title": "Ưu đãi giảm 50.000 đồng",
+        "nameBrand": "The coffee house",
+        "point": "assets/images/50 point.png",
+      },
+      {
+        "image": "assets/images/super sale.png",
+        "title": "Ưu đãi giảm 50.000 đồng",
+        "nameBrand": "Gemini",
+        "point": "assets/images/200 points.png",
+      },
     ];
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
@@ -43,7 +67,7 @@ class Brands2 extends StatelessWidget {
                   padding: const EdgeInsets.only(
                     left: 18.0,
                     right: 18.0,
-                    top: 20.0,
+                    top: 16.0,
                   ),
                   // padding:const EdgeInsets.all(7.0,),
                   child: Row(

@@ -1,5 +1,6 @@
-import 'package:accum_points_app/size_config.dart';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../constants.dart';
 
 class TitleBrands extends StatelessWidget {
@@ -8,16 +9,16 @@ class TitleBrands extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: getProportionateScreenHeight(40.6)),
+      padding: const EdgeInsets.only(left: 18.0,right: 18.0,top: 20.0,),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
+    const Text(
             "Thương hiệu tích - tiêu điểm",
             style: TextStyle(
               color: kTextTitleBigColors,
               fontWeight: FontWeight.w600,
-              fontSize: getProportionateScreenWidth(23.44),
+              fontSize: 16.0,
             ),
           ),
           TextButton(
