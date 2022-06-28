@@ -1,6 +1,6 @@
 import 'package:accum_points_app/size_config.dart';
 import 'package:flutter/material.dart';
-import '../../../../constants.dart';
+import '../../../../../../constants.dart';
 
 class TitleBrands extends StatelessWidget {
   const TitleBrands({Key? key, required this.title, required this.onPress})

@@ -2,8 +2,8 @@ import 'package:accum_points_app/constants.dart';
 import 'package:accum_points_app/size_config.dart';
 import 'package:flutter/material.dart';
 
-class Brands extends StatelessWidget {
-  const Brands({Key? key}) : super(key: key);
+class Brands1 extends StatelessWidget {
+  const Brands1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
