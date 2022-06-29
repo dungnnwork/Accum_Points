@@ -14,10 +14,9 @@ final kLineargradientBackgroundColors = LinearGradient(
   begin: Alignment.topCenter,
   end: Alignment.bottomCenter,
   colors: [
-    const Color(0xffFFDE33),
-    const Color(0xffFFD748).withOpacity(0.5),
+    const Color(0xffFFDe33),
+    const Color(0xffffd748).withOpacity(0.5),
   ],
 );
-
 // Active Item
 const activeItemColors = Color(0xffffcd01);

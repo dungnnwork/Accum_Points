@@ -12,6 +12,6 @@ class QRPage extends StatefulWidget {
 class _QRPageState extends State<QRPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

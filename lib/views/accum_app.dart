@@ -1,21 +1,19 @@
 import 'package:accum_points_app/constants.dart';
-import 'package:accum_points_app/size_config.dart';
 import 'package:accum_points_app/views/screens/endow_page/endow_page.dart';
 import 'package:accum_points_app/views/screens/home_page/home_page.dart';
 import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_page.dart';
 import 'package:accum_points_app/views/screens/qr_page/qr_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AccumApp extends StatefulWidget {
   const AccumApp({Key? key}) : super(key: key);
   @override
   State<AccumApp> createState() => _AccumAppState();
 }
-
 class _AccumAppState extends State<AccumApp> {
   int seclectedIndex = 0;
-
   List<Widget> pages = [
     const HomePage(),
     const EndowPage(),
@@ -25,20 +23,18 @@ class _AccumAppState extends State<AccumApp> {
   ];
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context);
+    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return bodyApp();
   }
-
   Widget bodyApp() {
     return Scaffold(
       bottomNavigationBar: bottomBar(),
       body: pages[seclectedIndex],
     );
   }
-
   Widget bottomBar() {
     return Container(
-      height: getProportionateScreenHeight(10.28),
+      height: 79.h,
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -50,8 +46,8 @@ class _AccumAppState extends State<AccumApp> {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(getProportionateScreenWidth(37.5)),
-          topRight: Radius.circular(getProportionateScreenWidth(37.5)),
+          topLeft: Radius.circular(10.w),
+          topRight: Radius.circular(10.w),
         ),
         child: BottomNavigationBar(
           backgroundColor: const Color(0xfffdfdfd),

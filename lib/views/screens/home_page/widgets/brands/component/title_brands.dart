@@ -1,5 +1,6 @@
-import 'package:accum_points_app/size_config.dart';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../constants.dart';
 
 class TitleBrands extends StatelessWidget {
@@ -10,8 +11,9 @@ class TitleBrands extends StatelessWidget {
   final Function? onPress;
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return Container(
-      margin: EdgeInsets.only(top: getProportionateScreenHeight(40.6)),
+      margin: EdgeInsets.only(top: 20.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -21,7 +23,7 @@ class TitleBrands extends StatelessWidget {
             style: TextStyle(
               color: kTextTitleBigColors,
               fontWeight: FontWeight.w600,
-              fontSize: getProportionateScreenWidth(23.44),
+              fontSize: 16.sp,
             ),
           ),
           GestureDetector(
@@ -30,7 +32,7 @@ class TitleBrands extends StatelessWidget {
               "Xem tất cả",
               style: TextStyle(
                 color: kTextPrimaryColors,
-                fontSize: getProportionateScreenWidth(31.25),
+                fontSize: 12.sp,
                 fontWeight: FontWeight.w400,
               ),
             ),

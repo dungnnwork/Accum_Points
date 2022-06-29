@@ -1,13 +1,14 @@
 import 'package:accum_points_app/constants.dart';
-import 'package:accum_points_app/size_config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Brands1 extends StatelessWidget {
   const Brands1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> brands = [
+   ScreenUtil.init(context, designSize: const Size(375.0, 812.0));    
+   List<Map<String, dynamic>> brands = [
       {
         "title": "The coffee house",
         "image": "assets/images/the coffee house.png",
@@ -17,6 +18,14 @@ class Brands1 extends StatelessWidget {
         "image": "assets/images/Logo-Gemini-Coffee.png",
       },
       {
+        "title": "The coffee house",
+        "image": "assets/images/the coffee house.png",
+      },
+      {
+        "title": "Gemini coffee",
+        "image": "assets/images/Logo-Gemini-Coffee.png",
+      },
+       {
         "title": "The coffee house",
         "image": "assets/images/the coffee house.png",
       },
@@ -31,27 +40,28 @@ class Brands1 extends StatelessWidget {
         children: List.generate(
           brands.length,
           (index) => Container(
-            height: getProportionateScreenHeight(6.2),
-            width: getProportionateScreenWidth(3.0),
+            height: 125.h,
+            width: 125.w,
             margin: index != brands.length - 1
-                ? EdgeInsets.only(right: getProportionateScreenWidth(26.78))
+                ? EdgeInsets.only(right: 14.w)
                 : const EdgeInsets.only(right: 0.0),
             child: Stack(
               children: [
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: Container(
-                    height: getProportionateScreenHeight(15.04),
-                    width: getProportionateScreenWidth(3.0),
+                    height: 54.h,
+                    width: 125.w,
                     margin: EdgeInsets.only(
-                        bottom: getProportionateScreenHeight(101.5)),
+                        bottom: 8.h),
                     padding: EdgeInsets.only(
-                      top: getProportionateScreenHeight(40.6),
+                      top: 20.h,
                     ),
                     decoration: BoxDecoration(
                         color: kBackgroundColors,
                         borderRadius: BorderRadius.circular(
-                            getProportionateScreenHeight(75.0)),
+                            11.h
+                            ),
                         boxShadow: [
                           BoxShadow(
                             color: kTextTitleBigColors.withOpacity(0.16),
@@ -62,7 +72,7 @@ class Brands1 extends StatelessWidget {
                     child: Text(
                       brands[index]['title'],
                       style: TextStyle(
-                        fontSize: getProportionateScreenWidth(27.0),
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w600,
                         color: kTextTitleBigColors,
                       ),
@@ -72,12 +82,12 @@ class Brands1 extends StatelessWidget {
                 ),
                 ClipRRect(
                   borderRadius:
-                      BorderRadius.circular(getProportionateScreenWidth(75)),
+                      BorderRadius.circular(5.w),
                   child: Image.asset(
                     brands[index]['image'],
                     fit: BoxFit.cover,
-                    height: getProportionateScreenHeight(10.02),
-                    width: getProportionateScreenWidth(3.0),
+                    height: 81.h,
+                    width: 125.w,
                   ),
                 ),
               ],

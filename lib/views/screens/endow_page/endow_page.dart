@@ -11,6 +11,6 @@ class EndowPage extends StatefulWidget {
 class _EndowPageState extends State<EndowPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

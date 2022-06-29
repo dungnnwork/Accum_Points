@@ -1,5 +1,5 @@
-import 'package:accum_points_app/size_config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../constants.dart';
 
 class Brands2 extends StatelessWidget {
@@ -7,6 +7,7 @@ class Brands2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     List<Map<String, dynamic>> brands2 = [
       {
         "image": "assets/images/hello summer.png",
@@ -56,7 +57,7 @@ class Brands2 extends StatelessWidget {
       children: List.generate(
         brands2.length,
         (index) => Container(
-          margin: EdgeInsets.only(bottom: getProportionateScreenHeight(50.75)),
+          margin: EdgeInsets.only(bottom: 16.h),
           decoration: BoxDecoration(
             color: kBackgroundColors,
             boxShadow: [
@@ -67,40 +68,40 @@ class Brands2 extends StatelessWidget {
               ),
             ],
             borderRadius:
-                BorderRadius.circular(getProportionateScreenWidth(75)),
+                BorderRadius.circular(5.w),
             border: Border.all(
               color: const Color(0xFFf4f4f4),
-              width: getProportionateScreenWidth(375),
+              width: 1.w,
             ),
           ),
           child: Row(
             children: [
               SizedBox(
-                width: getProportionateScreenWidth(3.0),
+                width: 125.w,
                 child: Padding(
                   padding: EdgeInsets.only(
-                    top: getProportionateScreenHeight(203.0),
-                    bottom: getProportionateScreenHeight(203.0),
-                    left: getProportionateScreenWidth(93.75),
+                    top: 4.h,
+                    bottom: 4.h,
+                    left: 4.w,
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(
-                        getProportionateScreenWidth(75.0)),
+                        5.w),
                     child: Image.asset(
                       brands2[index]['image'],
                       fit: BoxFit.cover,
-                      height: getProportionateScreenHeight(8.63),
+                      height: 94.h,
                     ),
                   ),
                 ),
               ),
-              SizedBox(width: getProportionateScreenWidth(20.83)),
+              SizedBox(width: 18.w),
               Expanded(
                 child: Container(
                   margin: EdgeInsets.only(
-                    top: getProportionateScreenHeight(73.81),
-                    right: getProportionateScreenWidth(37.5),
-                    bottom: getProportionateScreenHeight(116),
+                    top: 11.h,
+                    right: 10.w,
+                    bottom: 7.h,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,23 +114,24 @@ class Brands2 extends StatelessWidget {
                             style: TextStyle(
                               overflow: TextOverflow.ellipsis,
                               color: kTextTitleBigColors,
-                              fontSize: getProportionateScreenWidth(26.78),
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                           SizedBox(
-                              height: getProportionateScreenHeight(135.33)),
+                              height: 6.h,
+                              ),
                           Container(
                             padding: EdgeInsets.only(
-                              left: getProportionateScreenWidth(23.44),
-                              right: getProportionateScreenWidth(23.44),
-                              top: getProportionateScreenHeight(162.4),
-                              bottom: getProportionateScreenHeight(203),
+                              left: 16.w,
+                              right: 16.w,
+                              top: 5.h,
+                              bottom: 4.h,
                             ),
                             decoration: BoxDecoration(
                               color: const Color(0xfffff6d6),
                               borderRadius: BorderRadius.circular(
-                                getProportionateScreenWidth(75),
+                                5.w,
                               ),
                             ),
                             child: Text(
@@ -141,7 +143,7 @@ class Brands2 extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: getProportionateScreenHeight(101.5)),
+                      SizedBox(height: 8.h),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
@@ -149,15 +151,15 @@ class Brands2 extends StatelessWidget {
                             '${brands2[index]['numberPoint']}',
                             style: TextStyle(
                               color: kbuttonBackgroundColors,
-                              fontSize: getProportionateScreenWidth(26.78),
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          SizedBox(width: getProportionateScreenWidth(187.5)),
+                          SizedBox(width: 2.w),
                           Image.asset(
                             brands2[index]['point'],
-                            width: getProportionateScreenWidth(32.25),
-                            height: getProportionateScreenHeight(67.67),
+                            width: 11.6.w,
+                            height: 12.h,
                           ),
                         ],
                       )

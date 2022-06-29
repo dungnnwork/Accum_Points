@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../constants.dart';
-import '../../../../size_config.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({
@@ -10,17 +9,19 @@ class Welcome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
+    return Container(
       padding: EdgeInsets.only(
-        left: getProportionateScreenWidth(20.83),
-        right: getProportionateScreenWidth(16.81),
+        left: 18.w,
+        right: 18.w,
+        top: 61.h,
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            width: getProportionateScreenWidth(7.5),
-            height: getProportionateScreenHeight(16.24),
+            width: 50.w,
+            height: 50.h,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               boxShadow: [
@@ -30,44 +31,46 @@ class Welcome extends StatelessWidget {
                     color: const Color(0xffA4A4A4).withOpacity(0.25)),
               ],
               border: Border.all(
-                  width: getProportionateScreenWidth(375),
+                  width: 375.w,
                   color: kBackgroundColors,
-                  style: BorderStyle.solid),
+                  style: BorderStyle.solid,
+                  ),
               image: const DecorationImage(
                 image: AssetImage('assets/images/avatar.jpg'),
               ),
             ),
           ),
-          SizedBox(width: getProportionateScreenWidth(20.83)),
+          SizedBox(width: 18.w),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Xin chào Kim Ngân!',
+                'Xin chào Đặng Thanh Long!',
                 style: TextStyle(
                   color: kTextTitleBigColors,
-                  fontSize: getProportionateScreenWidth(23.44),
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              SizedBox(height: getProportionateScreenHeight(135.33)),
+              SizedBox(height: 6.h),
               Row(
                 children: [
                   Text(
                     'Tiêu chuẩn',
                     style: TextStyle(
                       color: kTextTitleBigColors,
-                      fontSize: getProportionateScreenWidth(26.78),
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  SizedBox(width: getProportionateScreenWidth(31.25)),
+                  SizedBox(width: 12.w),
                   Container(
                     padding: EdgeInsets.only(
-                        top: getProportionateScreenHeight(270.67),
-                        left: getProportionateScreenWidth(41.67),
-                        right: getProportionateScreenHeight(125),
-                        bottom: getProportionateScreenHeight(270.67)),
+                        top: 3.h,
+                        left: 9.w,
+                        right: 6.5.h,
+                        bottom: 3.h,
+                        ),
                     decoration: BoxDecoration(
                       color: kBackgroundColors,
                       borderRadius:
@@ -85,11 +88,11 @@ class Welcome extends StatelessWidget {
                           '1000',
                           style: TextStyle(
                             color: const Color(0xffC19700),
-                            fontSize: getProportionateScreenWidth(23.44),
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(width: getProportionateScreenWidth(75.0)),
+                        SizedBox(width: 5.w),
                         Image.asset('assets/icons/user_point.png'),
                       ],
                     ),

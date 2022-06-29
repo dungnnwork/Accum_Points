@@ -2,8 +2,8 @@ import 'package:accum_points_app/views/screens/home_page/widgets/brands/componen
 import 'package:accum_points_app/views/screens/home_page/widgets/brands/component/brands2.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/brands/component/title_brands.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../constants.dart';
-import '../../../../../size_config.dart';
 
 class Brands extends StatelessWidget {
   const Brands({
@@ -12,10 +12,11 @@ class Brands extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return Container(
-      width: SizeConfig().screenWidth,
+      width: 375.w,
       padding:
-          EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20.83)),
+          EdgeInsets.symmetric(horizontal: 18.w,),
       decoration: BoxDecoration(
         color: kBackgroundColors,
         boxShadow: [
@@ -25,8 +26,8 @@ class Brands extends StatelessWidget {
               color: kTextTitleBigColors.withOpacity(0.1)),
         ],
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(getProportionateScreenWidth(18.75)),
-          topRight: Radius.circular(getProportionateScreenWidth(18.75)),
+          topLeft: Radius.circular(20.w),
+          topRight: Radius.circular(20.w),
         ),
       ),
       child: Column(
@@ -35,17 +36,18 @@ class Brands extends StatelessWidget {
             title: 'Thương hiệu tích - tiêu điểm',
             onPress: () {},
           ),
-          SizedBox(height: getProportionateScreenHeight(50.75)),
-          const Brands1(),
-          SizedBox(height: getProportionateScreenHeight(406.0)),
+          SizedBox(height: 16.h),
+    const Brands1(),
+          SizedBox(height: 1.h),
           TitleBrands(
             title: 'Săn ưu đãi',
             onPress: () {},
           ),
-          SizedBox(height: getProportionateScreenHeight(50.75)),
-          const Brands2(),
+          SizedBox(height: 16.h),
+    const Brands2(),
         ],
       ),
     );
+    
   }
 }
