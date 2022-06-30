@@ -1,9 +1,9 @@
-import 'package:accum_points_app/views/screens/home_page/widgets/brands/component/brands1.dart';
-import 'package:accum_points_app/views/screens/home_page/widgets/brands/component/brands2.dart';
-import 'package:accum_points_app/views/screens/home_page/widgets/brands/component/title_brands.dart';
+import 'package:accum_points_app/views/screens/home_page/widgets/partners/component/brands1.dart';
+import 'package:accum_points_app/views/screens/home_page/widgets/partners/component/brands2.dart';
+import 'package:accum_points_app/views/screens/home_page/widgets/partners/component/title_brands.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../constants.dart';
+import '../../../../dependents_app/constants.dart';
 
 class Brands extends StatelessWidget {
   const Brands({
@@ -12,11 +12,8 @@ class Brands extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return Container(
       width: 375.w,
-      padding:
-          EdgeInsets.symmetric(horizontal: 18.w,),
       decoration: BoxDecoration(
         color: kBackgroundColors,
         boxShadow: [

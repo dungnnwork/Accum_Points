@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../../constants.dart';
+import '../../../../../dependents_app/constants.dart';
 
 class TitleBrands extends StatelessWidget {
   const TitleBrands({Key? key, required this.title, required this.onPress})
@@ -11,8 +11,8 @@ class TitleBrands extends StatelessWidget {
   final Function? onPress;
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return Container(
+      padding: EdgeInsets.symmetric(horizontal: 18.w),
       margin: EdgeInsets.only(top: 20.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

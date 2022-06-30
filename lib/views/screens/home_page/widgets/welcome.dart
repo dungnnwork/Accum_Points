@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../constants.dart';
+import '../../../dependents_app/constants.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({
@@ -9,7 +9,6 @@ class Welcome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return Container(
       padding: EdgeInsets.only(
         left: 18.w,

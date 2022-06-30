@@ -1,4 +1,4 @@
-import 'package:accum_points_app/constants.dart';
+import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/endow_page/endow_page.dart';
 import 'package:accum_points_app/views/screens/home_page/home_page.dart';
 import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
@@ -23,7 +23,6 @@ class _AccumAppState extends State<AccumApp> {
   ];
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return bodyApp();
   }
   Widget bodyApp() {
