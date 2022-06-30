@@ -1,10 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../dependents_app/constants.dart';
 
-class TitleBrands extends StatelessWidget {
-  const TitleBrands({Key? key, required this.title, required this.onPress})
+class TitleBackGroundProduct extends StatelessWidget {
+  const TitleBackGroundProduct(
+      {Key? key, required this.title, required this.onPress})
       : super(key: key);
 
   final String? title;

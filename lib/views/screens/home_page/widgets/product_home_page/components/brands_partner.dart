@@ -2,12 +2,12 @@ import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Brands1 extends StatelessWidget {
-  const Brands1({Key? key}) : super(key: key);
+class BrandsPartner extends StatelessWidget {
+  const BrandsPartner({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-   List<Map<String, dynamic>> brands = [
+    List<Map<String, dynamic>> brands = [
       {
         "title": "The coffee house",
         "image": "assets/images/the coffee house.png",
@@ -24,7 +24,7 @@ class Brands1 extends StatelessWidget {
         "title": "Gemini coffee",
         "image": "assets/images/Logo-Gemini-Coffee.png",
       },
-       {
+      {
         "title": "The coffee house",
         "image": "assets/images/the coffee house.png",
       },
@@ -53,16 +53,13 @@ class Brands1 extends StatelessWidget {
                     child: Container(
                       height: 54.h,
                       width: 125.w,
-                      margin: EdgeInsets.only(
-                          bottom: 8.h),
+                      margin: EdgeInsets.only(bottom: 8.h),
                       padding: EdgeInsets.only(
                         top: 20.h,
                       ),
                       decoration: BoxDecoration(
                           color: kBackgroundColors,
-                          borderRadius: BorderRadius.circular(
-                              11.h
-                              ),
+                          borderRadius: BorderRadius.circular(11.h),
                           boxShadow: [
                             BoxShadow(
                               color: kTextTitleBigColors.withOpacity(0.16),
@@ -82,8 +79,7 @@ class Brands1 extends StatelessWidget {
                     ),
                   ),
                   ClipRRect(
-                    borderRadius:
-                        BorderRadius.circular(5.w),
+                    borderRadius: BorderRadius.circular(5.w),
                     child: Image.asset(
                       brands[index]['image'],
                       fit: BoxFit.cover,
