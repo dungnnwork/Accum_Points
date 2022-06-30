@@ -15,8 +15,6 @@ class Brands extends StatelessWidget {
     ScreenUtil.init(context, designSize: const Size(375.0, 812.0));
     return Container(
       width: 375.w,
-      padding:
-          EdgeInsets.symmetric(horizontal: 18.w,),
       decoration: BoxDecoration(
         color: kBackgroundColors,
         boxShadow: [
@@ -37,17 +35,16 @@ class Brands extends StatelessWidget {
             onPress: () {},
           ),
           SizedBox(height: 16.h),
-    const Brands1(),
+          const Brands1(),
           SizedBox(height: 1.h),
           TitleBrands(
             title: 'Săn ưu đãi',
             onPress: () {},
           ),
           SizedBox(height: 16.h),
-    const Brands2(),
+          const Brands2(),
         ],
       ),
     );
-    
   }
 }
