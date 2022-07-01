@@ -18,18 +18,19 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          const BackgroundPage(),
-          const Welcome(),
+    const BackgroundPage(),
+    const Welcome(),
           Container(
             padding: EdgeInsets.only(
               top: 130.h,
             ),
+            // Exactly present
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  const BannerItem(),
+            const BannerItem(),
                   SizedBox(height: 8.h),
-                  const BackGroundProduct(
+            const BackGroundProduct(
                     child: ProductHomepage(),
                   ),
                 ],
