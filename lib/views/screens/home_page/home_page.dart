@@ -1,6 +1,5 @@
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/banner_item.dart';
-import 'package:accum_points_app/views/components_app/background_product.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/product_homepage.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/welcome.dart';
 import 'package:flutter/material.dart';
@@ -19,22 +18,19 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           const BackgroundPage(),
-          const Welcome(),
-          Container(
-            padding: EdgeInsets.only(
-              top: 130.h,
-            ),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  const BannerItem(),
-                  SizedBox(height: 8.h),
-                  const BackGroundProduct(
-                    child: ProductHomepage(),
-                  ),
-                ],
-              ),
-            ),
+          Column(
+            children: [
+              const Welcome(),
+              SizedBox(height: 13.h),
+              const Expanded(
+                child: CustomScrollView(
+                  slivers: [
+                    SliverToBoxAdapter(child: BannerItem()),
+                    ProductHomepage(),
+                  ],
+                ),
+              )
+            ],
           ),
         ],
       ),

@@ -45,17 +45,19 @@ class EndowsPartner extends StatelessWidget {
         'numberPoints': 200,
       },
     ];
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 18.w),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: List.generate(
-          brands2.length,
-          (index) => Endow(
-              image: brands2[index]['image'],
-              titleEndow: brands2[index]['title'],
-              nameBrandEndow: brands2[index]['nameBrand'],
-              numberPoint: brands2[index]['numberPoints']),
+    return SliverToBoxAdapter(
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 18.w),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: List.generate(
+            brands2.length,
+            (index) => Endow(
+                image: brands2[index]['image'],
+                titleEndow: brands2[index]['title'],
+                nameBrandEndow: brands2[index]['nameBrand'],
+                numberPoint: brands2[index]['numberPoints']),
+          ),
         ),
       ),
     );

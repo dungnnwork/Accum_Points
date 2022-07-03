@@ -14,7 +14,7 @@ class _BannerItemState extends State<BannerItem> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        SizedBox(
           height: 154.h,
           child: PageView.builder(
             onPageChanged: (index) {
@@ -36,27 +36,28 @@ class _BannerItemState extends State<BannerItem> {
             }),
           ),
         ),
-        SizedBox(
-          height: 8.h,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ...List.generate(
-              bannerList.length,
-              (index) => AnimatedContainer(
-                duration: const Duration(microseconds: 350),
-                margin: EdgeInsets.symmetric(horizontal: 4.w),
-                width: 6.w,
-                height: 6.h,
-                decoration: BoxDecoration(
-                  color: selectedIndex == index
-                      ? const Color(0xffffffff)
-                      : const Color(0xffffffff).withOpacity(0.5),
+        SizedBox(height: 8.h),
+        Container(
+          margin: EdgeInsets.only(bottom: 8.h),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ...List.generate(
+                bannerList.length,
+                (index) => AnimatedContainer(
+                  duration: const Duration(microseconds: 350),
+                  margin: EdgeInsets.symmetric(horizontal: 4.w),
+                  width: 6.w,
+                  height: 6.h,
+                  decoration: BoxDecoration(
+                    color: selectedIndex == index
+                        ? const Color(0xffffffff)
+                        : const Color(0xffffffff).withOpacity(0.5),
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ],
     );

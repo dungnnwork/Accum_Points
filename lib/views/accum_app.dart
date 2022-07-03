@@ -12,6 +12,7 @@ class AccumApp extends StatefulWidget {
   @override
   State<AccumApp> createState() => _AccumAppState();
 }
+
 class _AccumAppState extends State<AccumApp> {
   int seclectedIndex = 0;
   List<Widget> pages = [
@@ -25,12 +26,14 @@ class _AccumAppState extends State<AccumApp> {
   Widget build(BuildContext context) {
     return bodyApp();
   }
+
   Widget bodyApp() {
     return Scaffold(
       bottomNavigationBar: bottomBar(),
       body: pages[seclectedIndex],
     );
   }
+
   Widget bottomBar() {
     return Container(
       height: 79.h,
@@ -103,8 +106,10 @@ class _AccumAppState extends State<AccumApp> {
   }
 
   void onTapHandel(int index) {
-    setState(() {
-      seclectedIndex = index;
-    });
+    setState(
+      () {
+        seclectedIndex = index;
+      },
+    );
   }
 }
