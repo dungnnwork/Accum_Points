@@ -1,5 +1,7 @@
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/brands_partner.dart';
+import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/endows_partner.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/title_background_product.dart';
+import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sliver_tools/sliver_tools.dart';
@@ -16,14 +18,20 @@ class StikyTitle extends StatelessWidget {
         children: [
           TitleBackGroundProduct(
             title: 'Thương hiệu tích - tiêu điểm',
-            onPress: () {},
+            onPress: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const PartnerPage()));
+            },
           ),
           SizedBox(height: 16.h),
           const BrandsPartner(),
           SizedBox(height: 1.h),
           TitleBackGroundProduct(
             title: 'Săn ưu đãi',
-            onPress: () {},
+            onPress: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EndowsPartner()));
+            },
           ),
           SizedBox(height: 16.h),
         ],

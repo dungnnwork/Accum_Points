@@ -31,6 +31,8 @@ dependencies:
     sdk: flutter
   flutter_screenutil:  
   sliver_tools: 
+  dotted_border:
+  dotted_line:
 
 
   # The following adds the Cupertino Icons font to your application.

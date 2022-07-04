@@ -6,7 +6,6 @@ import 'package:sliver_tools/sliver_tools.dart';
 
 class ProductHomepage extends StatelessWidget {
   const ProductHomepage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return SliverStack(
@@ -21,7 +20,9 @@ class ProductHomepage extends StatelessWidget {
           children: const [
             StikyTitle(),
             SliverClip(
-              child: EndowsPartner(),
+              child: SliverToBoxAdapter(
+                child: EndowsPartner(),
+              ),
             ),
           ],
         ),
