@@ -1,6 +1,6 @@
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
-import 'package:accum_points_app/views/screens/endow_page/components/title_detail.dart';
+import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/endows_partner.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,12 +23,17 @@ class _EndowPageState extends State<EndowPage> {
    const   BackgroundPage(),
            Column(
             children: [
-       const  TitleDetail(title: "Ưu đãi"),
+              TitleDetail(
+                title: "Ưu đãi",
+                widget: IconButton(
+                          onPressed: (){},
+                          icon: Image.asset("assets/images/Vector heart.png"),
+                          ),
+                ),
               SizedBox(height: 22.h),
               Container(
                 width: 339.w,
                 height: 48.h,
-                padding: EdgeInsets.symmetric(horizontal: 18.w),
                 decoration:  BoxDecoration(
                   color:const Color(0xffffffff),
                   borderRadius: BorderRadius.circular(10.w),
