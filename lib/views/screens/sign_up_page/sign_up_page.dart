@@ -71,6 +71,8 @@ class _SignUpPageState extends State<SignUpPage> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                           hintText: 'Nhập số điện thoại',
+                          contentPadding:
+                              EdgeInsets.only(top: 15, left: 16, bottom: 12),
                           hintStyle: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.w400),
                           border: OutlineInputBorder(
