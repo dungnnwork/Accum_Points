@@ -52,6 +52,7 @@ class _AccumAppState extends State<AccumApp> {
           topRight: Radius.circular(10.w),
         ),
         child: BottomNavigationBar(
+          // landscapeLayout: bot,
           backgroundColor: const Color(0xfffdfdfd),
           fixedColor: Colors.black,
           showSelectedLabels: true,
@@ -104,7 +105,6 @@ class _AccumAppState extends State<AccumApp> {
       ),
     );
   }
-
   void onTapHandel(int index) {
     setState(
       () {

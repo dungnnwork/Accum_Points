@@ -3,8 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../dependents_app/constants.dart';
 
 class Welcome extends StatelessWidget {
+  final String userName;
+  final String rating;
+  final String numberPoints;
+  final String avatarUser;
   const Welcome({
-    Key? key,
+    Key? key, required this.userName, required this.rating, required this.numberPoints,required this.avatarUser,
   }) : super(key: key);
 
   @override
@@ -34,8 +38,8 @@ class Welcome extends StatelessWidget {
                   color: kBackgroundColors,
                   style: BorderStyle.solid,
                   ),
-              image: const DecorationImage(
-                image: AssetImage('assets/images/avatar.jpg'),
+              image:  DecorationImage(
+                image: AssetImage(avatarUser),
               ),
             ),
           ),
@@ -44,7 +48,7 @@ class Welcome extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Xin chào Đặng Thanh Long!',
+                'Xin chào $userName!',
                 style: TextStyle(
                   color: kTextTitleBigColors,
                   fontSize: 16.sp,
@@ -55,7 +59,7 @@ class Welcome extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    'Tiêu chuẩn',
+                    rating,
                     style: TextStyle(
                       color: kTextTitleBigColors,
                       fontSize: 14.sp,
@@ -84,7 +88,7 @@ class Welcome extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          '1000',
+                          numberPoints,
                           style: TextStyle(
                             color: const Color(0xffC19700),
                             fontSize: 16.sp,

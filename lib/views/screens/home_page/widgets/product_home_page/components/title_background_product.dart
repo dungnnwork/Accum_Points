@@ -27,7 +27,7 @@ class TitleBackGroundProduct extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: onPress as void Function(),
+            onTap: onPress as Function(),
             child: Text(
               "Xem tất cả",
               style: TextStyle(
