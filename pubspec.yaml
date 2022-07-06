@@ -30,6 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_screenutil:  
+  sliver_tools: 
   dotted_border:
   dotted_line:
 

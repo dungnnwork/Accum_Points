@@ -11,13 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: ((context, child) =>  MaterialApp(
-        home: const AccumApp(),
-        theme: ThemeData(
-          fontFamily: "Open Sans",
-        ),
-        debugShowCheckedModeBanner: false,
-      )),
+      builder: ((context, child) => MaterialApp(
+            home: const AccumApp(),
+            theme: ThemeData(
+              fontFamily: "Open Sans",
+            ),
+            debugShowCheckedModeBanner: false,
+          )),
       designSize: const Size(375.0, 812.0),
     );
   }

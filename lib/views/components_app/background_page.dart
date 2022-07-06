@@ -8,13 +8,15 @@ class BackgroundPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 812.0.h,
-      width: 375.0.w,
-      decoration:  BoxDecoration(
+      height: 812.h,
+      width: 375.w,
+      decoration: BoxDecoration(
         gradient: kLineargradientBackgroundColors,
       ),
       child: Container(
-        padding: EdgeInsets.only(right: 73.w,),
+        padding: EdgeInsets.only(
+          right: 73.w,
+        ),
         child: Stack(
           alignment: AlignmentDirectional.topStart,
           fit: StackFit.loose,
@@ -24,18 +26,17 @@ class BackgroundPage extends StatelessWidget {
               "assets/images/Ellipse 14.png",
               height: 224.h,
               width: 332.w,
-              
-              ),
+            ),
             Image.asset(
               "assets/images/Ellipse 15.png",
               width: 277.w,
               height: 220.h,
-              ),
+            ),
             Image.asset(
               "assets/images/Ellipse 16.png",
               height: 216.h,
               width: 240.w,
-              ),
+            ),
           ],
         ),
       ),

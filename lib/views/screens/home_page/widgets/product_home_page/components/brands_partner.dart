@@ -58,15 +58,16 @@ class BrandsPartner extends StatelessWidget {
                         top: 20.h,
                       ),
                       decoration: BoxDecoration(
-                          color: kBackgroundColors,
-                          borderRadius: BorderRadius.circular(11.h),
-                          boxShadow: [
-                            BoxShadow(
-                              color: kTextTitleBigColors.withOpacity(0.16),
-                              blurRadius: 4.0,
-                              offset: const Offset(0, 4),
-                            )
-                          ]),
+                        color: kBackgroundColors,
+                        borderRadius: BorderRadius.circular(11.h),
+                        boxShadow: [
+                          BoxShadow(
+                            color: kTextTitleBigColors.withOpacity(0.16),
+                            blurRadius: 4.0,
+                            offset: const Offset(0, 4),
+                          )
+                        ],
+                      ),
                       child: Text(
                         brands[index]['title'],
                         style: TextStyle(
