@@ -5,7 +5,6 @@ import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../home_page/widgets/product_home_page/components/endows_partner.dart';
 
 class DetailPartnerPage extends StatefulWidget {
