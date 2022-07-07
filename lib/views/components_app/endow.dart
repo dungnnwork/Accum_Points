@@ -6,10 +6,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class Endow extends StatelessWidget {
   const Endow({
     Key? key,
-     this.image,
-     this.titleEndow,
-     this.nameBrandEndow,
-     this.numberPoint,
+    this.image,
+    this.titleEndow,
+    this.nameBrandEndow,
+    this.numberPoint,
   }) : super(key: key);
 
   final String? image;
@@ -19,10 +19,10 @@ class Endow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return GestureDetector(
-      onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const OfferDetails()));
+      onTap: () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const OfferDetails()));
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 16.h),

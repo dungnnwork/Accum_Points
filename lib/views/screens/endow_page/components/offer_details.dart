@@ -5,7 +5,6 @@ import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/screens/endow_page/components/button_endow.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:dotted_line/dotted_line.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -199,7 +198,7 @@ class OfferDetails extends StatelessWidget {
                           height: 30.h,
                           decoration: const BoxDecoration(
                               image: DecorationImage(
-                            image: AssetImage("assets/images/download 2.png"),
+                            image: AssetImage("assets/images/image_30x30.png"),
                             fit: BoxFit.cover,
                           )),
                         ),
@@ -219,14 +218,17 @@ class OfferDetails extends StatelessWidget {
                             Row(
                               children: [
                                 Image.asset(
-                                  "assets/images/location1.png",
-                                  width: 11.w,
-                                  height: 13.h,
+                                  "assets/icons/location1.png",
+                                  width: 16.w,
+                                  height: 16.h,
                                 ),
                                 SizedBox(
                                   width: 15.w,
                                 ),
-                                const Text("Số 6, the are many variations  "),
+                                const Text(
+                                  "Số 6, the are many variations",
+                                  style: TextStyle(fontWeight: FontWeight.w400),
+                                ),
                               ],
                             ),
                           ],
@@ -236,16 +238,20 @@ class OfferDetails extends StatelessWidget {
                     SizedBox(
                       height: 9.h,
                     ),
+
+                    // adress
                     Row(
                       children: [
                         Container(
                           width: 30.w,
                           height: 30.h,
-                          decoration: const BoxDecoration(
-                              image: DecorationImage(
-                            image: AssetImage("assets/images/download 2.png"),
-                            fit: BoxFit.cover,
-                          )),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(2.w),
+                              image: const DecorationImage(
+                                image:
+                                    AssetImage("assets/images/image_30x30.png"),
+                                fit: BoxFit.cover,
+                              )),
                         ),
                         SizedBox(
                           width: 17.w,
@@ -256,21 +262,27 @@ class OfferDetails extends StatelessWidget {
                             Text(
                               "The coffee house Ngoại giao đoàn",
                               style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w600,
-                              ),
+                                  fontSize: 12.sp,
+                                  fontWeight: FontWeight.w600,
+                                  color: kTextTitleBigColors),
                             ),
                             Row(
                               children: [
                                 Image.asset(
-                                  "assets/images/location1.png",
-                                  width: 11.w,
-                                  height: 13.h,
+                                  "assets/icons/location1.png",
+                                  width: 16.w,
+                                  height: 16.h,
                                 ),
                                 SizedBox(
-                                  width: 15.w,
+                                  width: 13.w,
                                 ),
-                                const Text("Số 6, the are many variations  "),
+                                Text(
+                                  "Số 6, the are many variations",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 12.sp,
+                                      color: kTextTitleBigColors),
+                                ),
                               ],
                             ),
                           ],

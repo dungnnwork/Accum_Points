@@ -5,7 +5,6 @@ import 'package:accum_points_app/views/screens/home_page/widgets/product_home_pa
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class EndowPage extends StatefulWidget {
   const EndowPage({Key? key}) : super(key: key);
 
@@ -17,31 +16,31 @@ class _EndowPageState extends State<EndowPage> {
   final controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Stack(
-        children:  [
-   const   BackgroundPage(),
-           Column(
+        children: [
+          const BackgroundPage(),
+          Column(
             children: [
               TitleDetail(
                 title: "Ưu đãi",
                 widget: IconButton(
-                          onPressed: (){},
-                          icon: Image.asset("assets/images/Vector heart.png"),
-                          ),
+                  onPressed: () {},
+                  icon: Image.asset("assets/images/Vector heart.png"),
                 ),
+              ),
               SizedBox(height: 22.h),
               Container(
                 width: 339.w,
                 height: 48.h,
-                decoration:  BoxDecoration(
-                  color:const Color(0xffffffff),
+                decoration: BoxDecoration(
+                  color: const Color(0xffffffff),
                   borderRadius: BorderRadius.circular(10.w),
                   boxShadow: [
                     BoxShadow(
                       offset: const Offset(0, -3),
                       blurRadius: 4.0,
-                      color:  const Color(0xff000000).withOpacity(0.1),
+                      color: const Color(0xff000000).withOpacity(0.1),
                     ),
                   ],
                   border: Border.all(
@@ -54,9 +53,12 @@ class _EndowPageState extends State<EndowPage> {
                   textCapitalization: TextCapitalization.none,
                   controller: controller,
                   decoration: InputDecoration(
-                    prefixIcon: Image.asset("assets/images/search-status.png", color: const Color(0xff292d32).withOpacity(0.4),),
+                    prefixIcon: Image.asset(
+                      "assets/images/search-status.png",
+                      color: const Color(0xff292d32).withOpacity(0.4),
+                    ),
                     hintText: 'Tìm kiếm',
-                    hintStyle:  TextStyle(
+                    hintStyle: TextStyle(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w400,
                     ),
@@ -64,26 +66,25 @@ class _EndowPageState extends State<EndowPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 25.h,),
+              SizedBox(
+                height: 25.h,
+              ),
               Expanded(
-                child:  BackGroundProduct(
+                child: BackGroundProduct(
                   child: SingleChildScrollView(
                     child: Container(
                       padding: EdgeInsets.only(top: 24.h),
                       child: const EndowsPartner(),
-                      ),
+                    ),
                   ),
-                  ),
-        ),
+                ),
+              ),
             ],
-           ),
+          ),
         ],
       ),
     );
   }
-  
-  void search(String query) {
-    
-        
-  }
+
+  void search(String query) {}
 }

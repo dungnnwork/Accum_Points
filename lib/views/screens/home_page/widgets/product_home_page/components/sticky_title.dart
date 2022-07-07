@@ -1,5 +1,5 @@
+import 'package:accum_points_app/views/screens/endow_page/endow_page.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/brands_partner.dart';
-import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/endows_partner.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/title_background_product.dart';
 import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +30,7 @@ class StikyTitle extends StatelessWidget {
             title: 'Săn ưu đãi',
             onPress: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => EndowsPartner()));
+                  MaterialPageRoute(builder: (context) => const EndowPage()));
             },
           ),
           SizedBox(height: 16.h),
