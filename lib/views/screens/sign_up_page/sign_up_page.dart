@@ -159,20 +159,15 @@ class _SignUpPageState extends State<SignUpPage> {
                   Container(
                     height: 48.h,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: const Color(0xffFFD233),
-                        boxShadow: const [
-                          BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.1),
-                              blurRadius: 50,
-                              offset: Offset(0, -5)),
-                        ]),
-                    child: const Center(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color(0xffFFD233),
+                    ),
+                    child: Center(
                         child: Text(
                       'Đăng ký',
                       style: TextStyle(
-                          color: Color(0xff1E1E1E),
-                          fontSize: 18,
+                          color: const Color(0xff1E1E1E),
+                          fontSize: 18.sp,
                           fontWeight: FontWeight.w400),
                     )),
                   ),
