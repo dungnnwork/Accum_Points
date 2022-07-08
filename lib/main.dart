@@ -2,7 +2,7 @@ import 'package:accum_points_app/views/accum_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
+ void main() {
   runApp(const MyApp());
 }
 

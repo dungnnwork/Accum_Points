@@ -2,6 +2,7 @@ import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/title_profile.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/love_screen.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,11 +24,9 @@ class _ProfilePageState extends State<ProfilePage> {
           const BackgroundPage(),
                 Column(
                   children: [
-                     Row(
-                       children: const [
-                        TitleProfile(title: "Cá nhân")
-                       ],
-                     ),
+              const  TitleProfile(
+                       title: "Cá nhân",
+                      ),
                      SizedBox(height: 8.h,),
                      ClipRRect(
                       borderRadius: BorderRadius.circular(10.w),
@@ -222,7 +221,9 @@ class _ProfilePageState extends State<ProfilePage> {
               const   DottedLine(lineThickness: 0.1),
                       SizedBox(height: 15.h,),
                       GestureDetector(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const LoveScrenn()));
+                        },
                         child: Row(
                           children: [
                             Image.asset("assets/images/Group 172.png"),

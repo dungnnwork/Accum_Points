@@ -30,13 +30,6 @@ class _EndowPageState extends State<EndowPage> {
                   icon: Image.asset("assets/images/Vector heart.png"),
                   ),
                 ),
-              // TitleDetail(
-              //   title: "Ưu đãi",
-              //   widget: IconButton(
-              //     onPressed: (){},
-              //     icon: Image.asset("assets/images/Vector heart.png"),
-              //     ),
-              //   ),
               SizedBox(height: 22.h),
               Container(
                 width: 339.w,
