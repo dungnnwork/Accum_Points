@@ -1,3 +1,4 @@
+import 'package:accum_points_app/views/screens/login_page/text_field_log.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -52,26 +53,10 @@ class _SignUpPageState extends State<SignUpPage> {
                         color: const Color(0xff263238)),
                   ),
                   SizedBox(height: 2.h),
-                  ConstrainedBox(
-                    constraints:
-                        BoxConstraints(maxHeight: 49.h, maxWidth: 280.w),
-                    child: TextField(
-                      keyboardType: TextInputType.number,
-                      decoration: InputDecoration(
+                  TextFieldLog(
                           hintText: 'Nhập số điện thoại',
-                          contentPadding: EdgeInsets.symmetric(
-                              vertical: 13.h, horizontal: 16.w),
-                          hintStyle: TextStyle(
-                              color: const Color(0xff717171),
-                              fontSize: 16.sp,
-                              fontWeight: FontWeight.w400),
-                          border: const OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
-                              borderSide: BorderSide(
-                                  width: 1, color: Color(0xffa1a1a1)))),
-                    ),
-                  ),
+                          textInputType: TextInputType.text)
+                      .constrainedBox(),
                   SizedBox(height: 16.h),
                   Text(
                     'Mật khẩu',

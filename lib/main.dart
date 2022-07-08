@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: const SignUpPage(),
+            home: const LoginPage(),
             theme: ThemeData(
               fontFamily: "Open Sans",
             ),
