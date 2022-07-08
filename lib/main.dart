@@ -1,6 +1,7 @@
 import 'package:accum_points_app/views/accum_app.dart';
 import 'package:accum_points_app/views/screens/login_page/login_page.dart';
 import 'package:accum_points_app/views/screens/sign_up_page/sign_up_page.dart';
+import 'package:accum_points_app/views/screens/verify_otp_page/verify_otp_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: const LoginPage(),
+            home: const VerifyOtp(),
             theme: ThemeData(
               fontFamily: "Open Sans",
             ),
