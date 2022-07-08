@@ -2,10 +2,10 @@ import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
+import 'package:accum_points_app/views/screens/home_view/widgets/product_home_page/components/endows_partner.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../home_page/widgets/product_home_page/components/endows_partner.dart';
 
 class DetailPartnerPage extends StatefulWidget {
   const DetailPartnerPage({Key? key}) : super(key: key);
@@ -28,10 +28,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
             children: [
               TitleDetail(
                 title: 'Chi tiết đối tác',
-                widget: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                ),
+                widget: Image.asset('assets/icons/Vector heart.png'),
               ),
               SizedBox(height: 12.h),
               Expanded(

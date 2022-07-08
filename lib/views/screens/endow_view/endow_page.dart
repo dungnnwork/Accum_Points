@@ -1,7 +1,7 @@
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
-import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/endows_partner.dart';
+import 'package:accum_points_app/views/screens/home_view/widgets/product_home_page/components/endows_partner.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,11 +23,8 @@ class _EndowPageState extends State<EndowPage> {
           Column(
             children: [
               TitleDetail(
-                title: "Ưu đãi",
-                widget: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                ),
+                title: 'Ưu đãi',
+                widget: Image.asset('assets/icons/Vector heart.png'),
               ),
               SizedBox(height: 22.h),
               Container(
@@ -50,7 +47,6 @@ class _EndowPageState extends State<EndowPage> {
                 ),
                 child: TextFormField(
                   // onChanged: (search),
-                  textCapitalization: TextCapitalization.none,
                   controller: controller,
                   decoration: InputDecoration(
                     prefixIcon: Image.asset(

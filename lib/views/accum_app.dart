@@ -1,11 +1,12 @@
 import 'package:accum_points_app/views/dependents_app/constants.dart';
-import 'package:accum_points_app/views/screens/endow_page/endow_page.dart';
-import 'package:accum_points_app/views/screens/home_page/home_page.dart';
-import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
-import 'package:accum_points_app/views/screens/profile_page/profile_page.dart';
-import 'package:accum_points_app/views/screens/qr_page/qr_page.dart';
+import 'package:accum_points_app/views/screens/partner_view/partner_page/partner_page.dart';
+import 'package:accum_points_app/views/screens/profile_view/profile_page.dart';
+import 'package:accum_points_app/views/screens/qr_view/qr_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'screens/endow_view/endow_page.dart';
+import 'screens/home_view/home_page.dart';
 
 class AccumApp extends StatefulWidget {
   const AccumApp({Key? key}) : super(key: key);
@@ -52,6 +53,7 @@ class _AccumAppState extends State<AccumApp> {
           topRight: Radius.circular(10.w),
         ),
         child: BottomNavigationBar(
+          // landscapeLayout: bot,
           backgroundColor: const Color(0xfffdfdfd),
           fixedColor: Colors.black,
           showSelectedLabels: true,

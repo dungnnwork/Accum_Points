@@ -1,5 +1,5 @@
 import 'package:accum_points_app/views/dependents_app/constants.dart';
-import 'package:accum_points_app/views/screens/endow_page/components/offer_details.dart';
+import 'package:accum_points_app/views/screens/endow_view/components/offer_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

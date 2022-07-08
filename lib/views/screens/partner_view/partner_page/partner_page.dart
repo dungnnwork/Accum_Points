@@ -2,7 +2,7 @@ import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
-import 'package:accum_points_app/views/screens/partner_page/detail_partner_page/detail_partner_page.dart';
+import 'package:accum_points_app/views/screens/partner_view/detail_partner_page/detail_partner_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -116,10 +116,7 @@ class _PartnerPageState extends State<PartnerPage> {
             children: [
               TitleDetail(
                 title: "Đối tác",
-                widget: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                ),
+                widget: Container(),
               ),
               SizedBox(height: 12.h),
               Expanded(
