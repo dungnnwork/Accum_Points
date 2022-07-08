@@ -29,7 +29,10 @@ class TitleDetail extends StatelessWidget {
             ),
             ),
             Container(
-              child: widget,
+              child: IconButton(
+                onPressed: (){},
+                icon: Image.asset("assets/images/Vector heart.png"),
+                ),
             ),
            ],
        ),

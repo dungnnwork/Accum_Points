@@ -24,7 +24,7 @@ class StikyTitle extends StatelessWidget {
             },
           ),
           SizedBox(height: 16.h),
-          const BrandsPartner(),
+    const BrandsPartner(),
           SizedBox(height: 1.h),
           TitleBackGroundProduct(
             title: 'Săn ưu đãi',

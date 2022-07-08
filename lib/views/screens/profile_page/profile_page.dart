@@ -1,6 +1,6 @@
 import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
-import 'package:accum_points_app/views/components_app/title_profile.dart';
+import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_screens/love_screen.dart';
 import 'package:dotted_line/dotted_line.dart';
@@ -24,8 +24,9 @@ class _ProfilePageState extends State<ProfilePage> {
           const BackgroundPage(),
                 Column(
                   children: [
-              const  TitleProfile(
+                     TitleDetail(
                        title: "Cá nhân",
+                       widget: Container(),
                       ),
                      SizedBox(height: 8.h,),
                      ClipRRect(
