@@ -22,7 +22,7 @@ class OfferDetails extends StatelessWidget {
                   icon: Image.asset("assets/images/Vector heart.png"),
                 ),
               ),
-       const BackgroundOffer(),
+       const  BackgroundOffer(),
             ],
           ),
     const InforOffer(),  

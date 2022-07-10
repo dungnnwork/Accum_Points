@@ -44,15 +44,12 @@ class _EndowPageState extends State<EndowPage> {
                       color:  const Color(0xff000000).withOpacity(0.1),
                     ),
                   ],
-                  border: Border.all(
-                    color: const Color(0xffffffff),
-                    width: 1.w,
-                  ),
                 ),
                 child: TextFormField(
-                  // onChanged: (search),
                   controller: controller,
                   decoration: InputDecoration(
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
                     prefixIcon: Image.asset("assets/images/search-status.png", color: const Color(0xff292d32).withOpacity(0.4),),
                     hintText: 'Tìm kiếm',
                     hintStyle:  TextStyle(
@@ -80,7 +77,6 @@ class _EndowPageState extends State<EndowPage> {
       ),
     );
   }
-  
   void search(String query) {
     
         

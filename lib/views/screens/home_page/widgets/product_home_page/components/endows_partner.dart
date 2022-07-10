@@ -55,7 +55,8 @@ class EndowsPartner extends StatelessWidget {
               image: brands2[index]['image'],
               titleEndow: brands2[index]['title'],
               nameBrandEndow: brands2[index]['nameBrand'],
-              numberPoint: brands2[index]['numberPoints']),
+              numberPoints: brands2[index]['numberPoints'],
+              ),
         ),
       ),
     );
