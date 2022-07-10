@@ -24,7 +24,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
     return Scaffold(
       body: Stack(
         children: [
-          const BackgroundPage(),
+    const BackgroundPage(),
           Column(
             children: [
               TitleDetail(
@@ -34,7 +34,6 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                   icon: Image.asset("assets/images/Vector heart.png"),
                 ),
               ),
-              SizedBox(height: 12.h),
               Expanded(
                 child: BackGroundProduct(
                   child: Container(
@@ -114,7 +113,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                               Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 12.w),
                                 child: Container(
-                                  height: 40,
+                                  height: 40.h,
                                   padding: EdgeInsets.only(
                                       top: 6.h, left: 6.h, bottom: 6.h),
                                   decoration: BoxDecoration(
@@ -303,93 +302,3 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
     );
   }
 }
-
-/* 
-Column(
-                          children: [
-                            Container(
-                              padding: EdgeInsets.symmetric(horizontal: 6.w),
-                              child: TabBar(
-                                controller: tabController,
-                                tabs: const [
-                                  Tab(text: 'Thông tin '),
-                                  Tab(text: 'Cửa hàng'),
-                                  Tab(text: 'Ưu đãi'),
-                                ],
-                              ),
-                            ),
-                            SizedBox(height: 20.h),
-                            TabBarView(
-                              controller: tabController,
-                              children: [
-                                Padding(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 18.w),
-                                  child: const Text(
-                                      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text "),
-                                ),
-                                Padding(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 18.w),
-                                  child: const Text(
-                                      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text "),
-                                ),
-                                Padding(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 18.w),
-                                  child: const Text(
-                                      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text "),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-
-
-color: const Color(0xffFFFAE9),
-                              borderRadius: BorderRadius.circular(20.w)),
-padding: EdgeInsets.symmetric(
-                                vertical: 6.h, horizontal: 6.w),
-                                 Widget? onChangeChild() {
-    Widget? child;
-    switch (selectIndex) {
-      case 0:
-        child = Padding(
-          padding: EdgeInsets.symmetric(horizontal: 18.w),
-          child: const Text(
-              "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text "),
-        );
-        break;
-      case 1:
-        child = Padding(
-          padding: EdgeInsets.symmetric(horizontal: 18.w),
-          child: const Text(
-              "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text "),
-        );
-
-        break;
-      case 2:
-        child = const Expanded(
-            child: SingleChildScrollView(child: EndowsPartner()));
-        break;
-    }
-    return child;
-  }
-
-  double? onChangeHeight() {
-    double? height;
-    switch (selectIndex) {
-      case 0:
-        height = 24.h;
-        break;
-      case 1:
-        height = 13.h;
-        break;
-      case 2:
-        height = 20.h;
-        break;
-    }
-    return height;
-  }
-
-*/

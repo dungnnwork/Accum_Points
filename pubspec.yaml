@@ -65,6 +65,7 @@ flutter:
   assets:
       - assets/icons/
       - assets/icons/icons_bottombar/
+      - assets/icons/icons_profile/
       - assets/images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

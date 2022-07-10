@@ -11,14 +11,22 @@ class InforOffer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return  Container(
-            padding: EdgeInsets.only(left: 18.w, right: 18.w),
-            margin: EdgeInsets.only(
-              top: 123.h,
-            ),
+            margin: EdgeInsets.only(top: 123.h, left: 18.w, right: 18.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset("assets/images/hello summer 18.png"),
+                Container(
+                  width: 339.w,
+                  height: 129.h,
+                  padding: EdgeInsets.only(top: 123.h),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(13.52.w),
+                    image: const DecorationImage(
+                      image: AssetImage("assets/images/hello summer 18.png"),
+                      fit: BoxFit.cover,
+                      )
+                  ),
+                  ),
                 SizedBox(
                   height: 13.h,
                 ),
@@ -36,7 +44,16 @@ class InforOffer extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Image.asset("assets/images/coffe_house 67_67.png"),
-                            SizedBox(width: 25.w,),
+                            SizedBox(width: 8.w,),
+                            DottedLine(
+                              direction: Axis.vertical,
+                                    lineLength: 67.h,
+                                    lineThickness: 1.w,
+                                    dashLength: 1.86.h,
+                                    dashGapLength: 1.86.h,
+                                    dashColor: const Color(0xffa1a1a1),
+                            ),
+                            SizedBox(width: 17.w,),
                             Container(
                               padding: EdgeInsets.zero,
                               child: Column(
@@ -49,6 +66,7 @@ class InforOffer extends StatelessWidget {
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
+                                  SizedBox(height: 4.h,),
                                   Text(
                                     "The coffee house",
                                     style: TextStyle(
@@ -57,6 +75,7 @@ class InforOffer extends StatelessWidget {
                                       color: kTextPrimaryColors,
                                     ),
                                   ),
+                                  SizedBox(height: 10.h,),
                                   Row(
                                     children: [
                                       Text(
@@ -82,7 +101,7 @@ class InforOffer extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              width: 30.w,
+                              width: 28.w,
                             ),
                           ],
                         ),

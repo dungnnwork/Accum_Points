@@ -9,17 +9,16 @@ class Endow extends StatelessWidget {
      this.image,
      this.titleEndow,
      this.nameBrandEndow,
-     this.numberPoint,
+     this.numberPoints,
   }) : super(key: key);
 
   final String? image;
   final String? titleEndow;
   final String? nameBrandEndow;
-  final int? numberPoint;
+  final int? numberPoints;
 
   @override
   Widget build(BuildContext context) {
-    
     return GestureDetector(
       onTap: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) => const OfferDetails()));
@@ -65,7 +64,7 @@ class Endow extends StatelessWidget {
             Expanded(
               child: Container(
                 margin: EdgeInsets.only(
-                  top: 11.h,
+                  top: 7.h,
                   right: 10.w,
                   bottom: 7.h,
                 ),
@@ -114,7 +113,7 @@ class Endow extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
-                          '$numberPoint',
+                          '$numberPoints',
                           style: TextStyle(
                             color: kbuttonBackgroundColors,
                             fontSize: 14.sp,

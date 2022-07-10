@@ -9,9 +9,6 @@ class BackgroundOffer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.only(top: 87.h),
-        // width: 375.w,
-        // height: 812.h,
         decoration: BoxDecoration(
           color: kBackgroundColors,
           boxShadow: [
