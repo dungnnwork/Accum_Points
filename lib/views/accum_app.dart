@@ -30,7 +30,7 @@ class _AccumAppState extends State<AccumApp> {
 
   Widget bodyApp() {
     return Scaffold(
-      bottomNavigationBar: seclectedIndex == 2 ? null : bottomBar(),
+      bottomNavigationBar: bottomBar(),
       body: pages[seclectedIndex],
     );
   }
