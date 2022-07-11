@@ -130,15 +130,6 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                         child: const SingleChildScrollView(
                           child:  EndowsPartner(),
                         ),
-                        // child: Column(
-                        //   // children: List.generate(favariteOffers.length, (index) => Endow(
-                        //   //   image: favariteOffers[index]['image'],
-                        //   //   titleEndow: favariteOffers[index]['titleEndow'],
-                        //   //   nameBrandEndow: favariteOffers[index]['nameBrand'],
-                        //   //   numberPoints: favariteOffers[index]['numberPoints'],
-                        //   // ),
-                        //   // ),
-                        // ),
                       ),
                       Container(
                         margin: EdgeInsets.only(top: 14.h),

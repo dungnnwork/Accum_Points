@@ -1,33 +1,28 @@
-// import 'package:dotted_line/dotted_line.dart';
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+class ProfileAction extends StatelessWidget {
+  final String? imageUrl;
+  final String? des;
+  final GestureTapCallback? onTap;
+  const ProfileAction({Key? key, this.imageUrl, this.des, this.onTap,}) : super(key: key);
 
-// class ProfileAction extends StatefulWidget {
-//   final String iconsPro;
-//   final String des;
- 
-//   const ProfileAction({Key? key,required this.des,required this.iconsPro}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        GestureDetector(
+          onTap: onTap,
+          child: Row(
+            children: [
+              Image.asset(imageUrl!),
+              SizedBox(width: 15.w,),
+              Text(des!, style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600),), 
+            ],
+          ),
+        ),
+        SizedBox(height: 17.h,),
+      ],
+    );
+  }
+}
 
-//   @override
-//   State<ProfileAction> createState() => _ProfileActionState();
-// }
-
-// class _ProfileActionState extends State<ProfileAction> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       padding: EdgeInsets.only(top: 249.h, left: 18.w, right: 18.w),
-//       child: GestureDetector(
-//         onTap: (){},
-//         child: Row(
-//           children: [
-//              Image.asset(iconsPRO),
-//              SizedBox(width: 15.w,),
-//              Text(des),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
