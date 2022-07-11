@@ -3,6 +3,7 @@ import 'package:accum_points_app/views/screens/endow_page/endow_page.dart';
 import 'package:accum_points_app/views/screens/home_page/home_page.dart';
 import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_page.dart';
+import 'package:accum_points_app/views/components_app/qr_screen.dart';
 import 'package:accum_points_app/views/screens/qr_page/qr_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,7 +19,7 @@ class _AccumAppState extends State<AccumApp> {
   List<Widget> pages = [
     const HomePage(),
     const EndowPage(),
-    const QRPage(),
+    const QrPage(),
     const PartnerPage(),
     const ProfilePage(),
   ];
