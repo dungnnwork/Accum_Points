@@ -4,7 +4,6 @@ import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/screens/endow_page/components/infor_offer.dart';
 import 'package:flutter/material.dart';
 
-
 class OfferDetails extends StatelessWidget {
   const OfferDetails({Key? key}) : super(key: key);
   @override
@@ -12,22 +11,24 @@ class OfferDetails extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-    const BackgroundPage(),
+          const BackgroundPage(),
           Column(
             children: [
               TitleDetail(
                 title: "Chi tiết ưu đãi",
-                widget: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                ),
+                widget: Image.asset("assets/images/Vector heart.png"),
               ),
-       const  BackgroundOffer(),
+              const BackgroundOffer(),
             ],
           ),
-    const InforOffer(),  
+          const InforOffer(),
         ],
       ),
     );
   }
 }
+
+/*IconButton(
+                  onPressed: () {},
+              ),
+                  icon:  s*/

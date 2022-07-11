@@ -6,9 +6,6 @@ import 'package:accum_points_app/views/screens/partner_page/detail_partner_page/
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
-
-
 class PartnerPage extends StatefulWidget {
   const PartnerPage({Key? key}) : super(key: key);
 
@@ -17,7 +14,7 @@ class PartnerPage extends StatefulWidget {
 }
 
 class _PartnerPageState extends State<PartnerPage> {
-   List<Map<String, dynamic>> brands = [
+  List<Map<String, dynamic>> brands = [
     {
       'image': 'assets/images/coffe_house_big.png',
       'title': 'The coffee house',
@@ -115,32 +112,31 @@ class _PartnerPageState extends State<PartnerPage> {
       body: Stack(
         children: [
           const BackgroundPage(),
-                Column(
-                  children: [
-                     TitleDetail(
-                      title: "Đối tác",
-                      widget: IconButton(
-                        onPressed: (){},
-                        icon: Image.asset("assets/images/Vector heart.png"),
-                        ),
+          Column(
+            children: [
+              TitleDetail(
+                title: "Đối tác",
+                widget: IconButton(
+                  onPressed: () {},
+                  icon: Image.asset("assets/images/Vector heart.png"),
+                ),
+              ),
+              Expanded(
+                child: BackGroundProduct(
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 15.w),
+                    margin: EdgeInsets.only(bottom: 16.h),
+                    child: GridView.builder(
+                      itemCount: brands.length,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 12.h,
+                        mainAxisSpacing: 11.h,
                       ),
-                                SizedBox(height: 12.h),
-                      Expanded(
-                       child: BackGroundProduct(
-                        child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 15.w),
-                          margin: EdgeInsets.only(bottom: 16.h),
-                          child: GridView.builder(
-                           itemCount: brands.length,
-                             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                             crossAxisCount: 2,
-                             crossAxisSpacing: 12.h,
-                             mainAxisSpacing: 11.h,
-                            ),
-                           itemBuilder: (context, index) => GestureDetector(
-                           onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
+                      itemBuilder: (context, index) => GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
                             builder: (context) => const DetailPartnerPage(),
                           ),
                         ),
@@ -216,7 +212,7 @@ class _PartnerPageState extends State<PartnerPage> {
               ),
             ],
           ),
-       ],
+        ],
       ),
     );
   }

@@ -29,7 +29,7 @@ class _AccumAppState extends State<AccumApp> {
 
   Widget bodyApp() {
     return Scaffold(
-      bottomNavigationBar: bottomBar(),
+      bottomNavigationBar: seclectedIndex == 2 ? null : bottomBar(),
       body: pages[seclectedIndex],
     );
   }
@@ -105,6 +105,7 @@ class _AccumAppState extends State<AccumApp> {
       ),
     );
   }
+
   void onTapHandel(int index) {
     setState(
       () {

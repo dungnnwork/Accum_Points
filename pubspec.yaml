@@ -33,6 +33,7 @@ dependencies:
   sliver_tools: 
   dotted_border:
   dotted_line:
+  barcode_widget:
 
 
   # The following adds the Cupertino Icons font to your application.

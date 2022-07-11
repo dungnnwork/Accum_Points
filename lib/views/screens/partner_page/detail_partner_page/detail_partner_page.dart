@@ -24,7 +24,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
     return Scaffold(
       body: Stack(
         children: [
-    const BackgroundPage(),
+          const BackgroundPage(),
           Column(
             children: [
               TitleDetail(
