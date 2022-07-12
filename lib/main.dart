@@ -3,6 +3,7 @@ import 'package:accum_points_app/views/screens/endow_page/components/offer_detai
 import 'package:accum_points_app/views/screens/forgot_password_page/forgot_password_page.dart';
 import 'package:accum_points_app/views/screens/login_page/login_page.dart';
 import 'package:accum_points_app/views/screens/otp_forgot_pass_page/otp_forgot_pass_page.dart';
+import 'package:accum_points_app/views/screens/reset_pass_page/reset_pass_page.dart';
 import 'package:accum_points_app/views/screens/sign_up_page/sign_up_page.dart';
 import 'package:accum_points_app/views/screens/verify_otp_page/verify_otp_page.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: const OtpForgotPassPage(),
+            home: const ResetPassPage(),
             theme: ThemeData(
               fontFamily: "Open Sans",
             ),

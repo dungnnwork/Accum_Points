@@ -1,8 +1,5 @@
-import 'dart:isolate';
-
 import 'package:accum_points_app/views/screens/login_page/button_main.dart';
 import 'package:accum_points_app/views/screens/login_page/text_field_log.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -24,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(left: 19.w, top: 140.h, right: 19),
+                margin: EdgeInsets.only(left: 19.w, top: 140.h, right: 19.w),
                 decoration: BoxDecoration(
                   color: const Color(0xfffdfdfd),
                   borderRadius: BorderRadius.circular(10),
@@ -34,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
                 padding: EdgeInsets.only(
-                    top: 44.h, left: 29.w, right: 28.h, bottom: 38.h),
+                    top: 44.h, left: 29.w, right: 28.w, bottom: 38.h),
                 child: Column(
                     textDirection: TextDirection.ltr,
                     crossAxisAlignment: CrossAxisAlignment.start,

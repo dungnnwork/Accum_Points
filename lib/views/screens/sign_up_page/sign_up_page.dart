@@ -16,7 +16,7 @@ class _SignUpPageState extends State<SignUpPage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
-      body: SizedBox(
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
@@ -138,6 +138,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                   BorderRadius.all(Radius.circular(10)),
                               borderSide: BorderSide(
                                   width: 1, color: Color(0xffa1a1a1)))),
+                      obscureText: _secureText,
                     ),
                   ),
                   SizedBox(height: 48.h),
