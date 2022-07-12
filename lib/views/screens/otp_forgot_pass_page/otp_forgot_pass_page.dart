@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class VerifyOtp extends StatefulWidget {
-  const VerifyOtp({Key? key}) : super(key: key);
+class OtpForgotPassPage extends StatefulWidget {
+  const OtpForgotPassPage({Key? key}) : super(key: key);
 
   @override
-  State<VerifyOtp> createState() => _VerifyOtpState();
+  State<OtpForgotPassPage> createState() => _OtpForgotPassPageState();
 }
 
-class _VerifyOtpState extends State<VerifyOtp> {
+class _OtpForgotPassPageState extends State<OtpForgotPassPage> {
   int numberTime = 180;
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,8 @@ class _VerifyOtpState extends State<VerifyOtp> {
         child: Container(
           decoration: const BoxDecoration(color: Colors.white),
           child: Container(
-            margin: EdgeInsets.only(left: 19.w, top: 149.h, right: 19.w),
+            margin: EdgeInsets.only(
+                left: 19.w, top: 144.h, right: 19.w, bottom: 190.h),
             decoration: BoxDecoration(
               color: const Color(0xfffdfdfd),
               borderRadius: BorderRadius.circular(10),
@@ -28,13 +29,13 @@ class _VerifyOtpState extends State<VerifyOtp> {
               ],
             ),
             padding: EdgeInsets.only(
-                top: 45.h, left: 28.w, right: 29.w, bottom: 41.h),
+                top: 16.h, left: 28.w, right: 28.w, bottom: 26.h),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Center(
                   child: Text(
-                    'Xác nhận OTP',
+                    'Nhập mã OTP',
                     style: TextStyle(
                         color: const Color(0xff0f0f0f),
                         fontSize: 32.sp,
@@ -42,7 +43,19 @@ class _VerifyOtpState extends State<VerifyOtp> {
                   ),
                 ),
                 SizedBox(
-                  height: 48.h,
+                  height: 45.h,
+                ),
+                Text(
+                  'Chúng tôi đã gửi mã xác nhận OTP bao gồm 6 chữ đến số điện thoại của bạn, vui lòng nhập vào ô bên dưới để đặt lại mật khẩu.',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                      color: const Color(0xff0F0F0F),
+                      fontSize: 12.sp,
+                      fontWeight: FontWeight.w400,
+                      letterSpacing: -0.02),
+                ),
+                SizedBox(
+                  height: 37.h,
                 ),
                 Text(
                   'Nhập mã OTP',
@@ -50,9 +63,6 @@ class _VerifyOtpState extends State<VerifyOtp> {
                       color: const Color(0xff263238),
                       fontSize: 18.sp,
                       fontWeight: FontWeight.w700),
-                ),
-                SizedBox(
-                  height: 2.h,
                 ),
                 creatRowOtp(context),
                 SizedBox(

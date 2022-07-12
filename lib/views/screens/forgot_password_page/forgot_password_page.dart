@@ -45,7 +45,7 @@ class _ForgotPassPageState extends State<ForgotPassPage> {
           ),
           Text(
             'Vui lòng nhập số điện thoại vào ô bên dưới để chúng tôi giúp bạn đặt lại mật khẩu.',
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.justify,
             style: TextStyle(
                 color: const Color(0xff0F0F0F),
                 fontSize: 14.sp,
