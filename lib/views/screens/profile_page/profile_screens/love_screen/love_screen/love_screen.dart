@@ -7,7 +7,6 @@ import 'package:accum_points_app/views/screens/home_page/widgets/product_home_pa
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class LoveScrenn extends StatefulWidget {
   const LoveScrenn({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class LoveScrenn extends StatefulWidget {
   State<LoveScrenn> createState() => _LoveScrennState();
 }
 
-class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
+class _LoveScrennState extends State<LoveScrenn> with TickerProviderStateMixin {
   int selectIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -39,44 +38,45 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
     //     'numberPoints': 50,
     //   },
     // ];
-    List<Map<String , String>> listBrands = [
+    List<Map<String, String>> listBrands = [
       {
-        'image'     : 'assets/images/coffe_house 67_67.png',
-        'nameBrand' : 'The coffee house',
-        'typeBrand' : 'Nhà hàng',
+        'image': 'assets/images/coffe_house 67_67.png',
+        'nameBrand': 'The coffee house',
+        'typeBrand': 'Nhà hàng',
       },
       {
-        'image'     : 'assets/images/tri_tue_book.png',
-        'nameBrand' : 'Nhà sách Trí Tuệ',
-        'typeBrand' : 'Nhà sách',
+        'image': 'assets/images/tri_tue_book.png',
+        'nameBrand': 'Nhà sách Trí Tuệ',
+        'typeBrand': 'Nhà sách',
       },
       {
-        'image'     : 'assets/images/download 3.png',
-        'nameBrand' : 'Nhà sách Tiến Thọ',
-        'typeBrand' : 'Nhà sách',
+        'image': 'assets/images/download 3.png',
+        'nameBrand': 'Nhà sách Tiến Thọ',
+        'typeBrand': 'Nhà sách',
       },
       {
-        'image'     : 'assets/images/coffe_house 67_67.png',
-        'nameBrand' : 'The coffee house',
-        'typeBrand' : 'Nhà hàng',
+        'image': 'assets/images/coffe_house 67_67.png',
+        'nameBrand': 'The coffee house',
+        'typeBrand': 'Nhà hàng',
       },
     ];
     TabController tabController = TabController(length: 2, vsync: this);
     return Scaffold(
       body: Stack(
-        children:  [
-     const BackgroundPage(),
-           Column(
+        children: [
+          const BackgroundPage(),
+          Column(
             children: [
-               TitleDetail(
+              const TitleDetail(
                 title: "Yêu thích",
-                widget: Container(),
-                ),
-               SizedBox(height: 11.h,),
-        const  BackgroundOffer(),
+              ),
+              SizedBox(
+                height: 11.h,
+              ),
+              const BackgroundOffer(),
             ],
-           ),
-           Container(
+          ),
+          Container(
             margin: EdgeInsets.only(top: 130.h),
             child: Column(
               children: [
@@ -91,10 +91,10 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                     ),
                     child: TabBar(
                       labelColor: kTextTitleBigColors,
-                      unselectedLabelColor:  const Color(0xff757575),
+                      unselectedLabelColor: const Color(0xff757575),
                       controller: tabController,
                       indicator: BoxDecoration(
-                        color:  kbuttonBackgroundColors ,
+                        color: kbuttonBackgroundColors,
                         borderRadius: BorderRadius.circular(14.w),
                       ),
                       tabs: [
@@ -105,8 +105,7 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w600,
                             ),
-                            
-                            ),
+                          ),
                         ),
                         Tab(
                           child: Text(
@@ -118,7 +117,7 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                           ),
                         ),
                       ],
-                      ),
+                    ),
                   ),
                 ),
                 Expanded(
@@ -128,7 +127,7 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                       Container(
                         margin: EdgeInsets.only(top: 20.h),
                         child: const SingleChildScrollView(
-                          child:  EndowsPartner(),
+                          child: EndowsPartner(),
                         ),
                         // child: Column(
                         //   // children: List.generate(favariteOffers.length, (index) => Endow(
@@ -143,20 +142,22 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                       Container(
                         margin: EdgeInsets.only(top: 14.h),
                         child: Column(
-                          children: List.generate(listBrands.length, (index) => Brand(
-                            image: listBrands[index]['image'],
-                            nameBrand: listBrands[index]['nameBrand'],
-                            typeBrand: listBrands[index]['typeBrand'],
-                          ),
+                          children: List.generate(
+                            listBrands.length,
+                            (index) => Brand(
+                              image: listBrands[index]['image'],
+                              nameBrand: listBrands[index]['nameBrand'],
+                              typeBrand: listBrands[index]['typeBrand'],
+                            ),
                           ),
                         ),
                       ),
                     ],
-                    ),
                   ),
+                ),
               ],
             ),
-           ),
+          ),
         ],
       ),
     );

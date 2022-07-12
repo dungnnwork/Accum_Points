@@ -14,9 +14,8 @@ class OfferDetails extends StatelessWidget {
           const BackgroundPage(),
           Column(
             children: [
-              TitleDetail(
+              const TitleDetail(
                 title: "Chi tiết ưu đãi",
-                widget: Image.asset("assets/images/Vector heart.png"),
               ),
               const BackgroundOffer(),
             ],

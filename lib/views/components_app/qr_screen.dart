@@ -25,9 +25,8 @@ class _QRScreenState extends State<QRScreen> {
           SingleChildScrollView(
             child: Column(
               children: [
-                TitleDetail(
+                const TitleDetail(
                   title: 'QR Code',
-                  widget: Container(),
                 ),
                 SizedBox(height: 12.h),
                 Stack(

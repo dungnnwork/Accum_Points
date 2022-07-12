@@ -24,9 +24,8 @@ class _ProfilePageState extends State<ProfilePage> {
           const BackgroundPage(),
           Column(
             children: [
-              TitleDetail(
+              const TitleDetail(
                 title: "Cá nhân",
-                widget: Container(),
               ),
               Container(
                 margin: EdgeInsets.zero,

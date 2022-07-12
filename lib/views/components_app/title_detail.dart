@@ -3,9 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TitleDetail extends StatelessWidget {
   final String title;
-  final Widget widget;
-  const TitleDetail({Key? key, required this.title, required this.widget})
-      : super(key: key);
+  const TitleDetail({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,6 @@ class TitleDetail extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
           ),
-          // Container(child: widget,),
           IconButton(
             onPressed: () {},
             icon: Image.asset("assets/images/Vector heart.png"),
