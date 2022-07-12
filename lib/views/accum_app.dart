@@ -1,5 +1,4 @@
 import 'package:accum_points_app/constants.dart';
-import 'package:accum_points_app/views/screens/endow_page/endow_page.dart';
 import 'package:accum_points_app/views/screens/home_page/home_page.dart';
 import 'package:accum_points_app/views/screens/partner_page/partner_page.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_page.dart';
@@ -25,7 +24,6 @@ class _AccumAppState extends State<AccumApp> {
   ];
   List<Widget> pages = [
     const HomePage(),
-    const EndowPage(),
     const QRPage(),
     const PartnerPage(),
     const ProfilePage(),

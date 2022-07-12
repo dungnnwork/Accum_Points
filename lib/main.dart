@@ -1,4 +1,6 @@
 import 'package:accum_points_app/views/accum_app.dart';
+import 'package:accum_points_app/views/screens/endow_page/components/offer_details.dart';
+import 'package:accum_points_app/views/screens/forgot_password_page/forgot_password_page.dart';
 import 'package:accum_points_app/views/screens/login_page/login_page.dart';
 import 'package:accum_points_app/views/screens/sign_up_page/sign_up_page.dart';
 import 'package:accum_points_app/views/screens/verify_otp_page/verify_otp_page.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: const VerifyOtp(),
+            home: const ForgotPassPage(),
             theme: ThemeData(
               fontFamily: "Open Sans",
             ),

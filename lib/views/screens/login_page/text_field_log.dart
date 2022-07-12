@@ -13,7 +13,7 @@ class TextFieldLog {
         decoration: InputDecoration(
             hintText: hintText,
             contentPadding:
-                EdgeInsets.symmetric(vertical: 15.h, horizontal: 16.w),
+                EdgeInsets.symmetric(vertical: 14.h, horizontal: 16.w),
             hintStyle: TextStyle(
                 color: const Color(0xff717171),
                 fontSize: 16.sp,
