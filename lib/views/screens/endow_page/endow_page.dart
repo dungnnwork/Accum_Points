@@ -24,6 +24,8 @@ class _EndowPageState extends State<EndowPage> {
             children: [
               const TitleDetail(
                 title: "Ưu đãi",
+                widgetLeft: "",
+                widgetRight: 'assets/images/Vector heart.png',
               ),
               SizedBox(height: 22.h),
               Container(

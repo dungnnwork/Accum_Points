@@ -27,6 +27,8 @@ class _QRScreenState extends State<QRScreen> {
               children: [
                 const TitleDetail(
                   title: 'QR Code',
+                  widgetLeft: "assets/images/Path back.png",
+                  widgetRight: '',
                 ),
                 SizedBox(height: 12.h),
                 Stack(

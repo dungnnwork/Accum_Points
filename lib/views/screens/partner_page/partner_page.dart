@@ -115,7 +115,10 @@ class _PartnerPageState extends State<PartnerPage> {
             children: [
               const TitleDetail(
                 title: "Đối tác",
+                widgetLeft: "",
+                widgetRight: '',
               ),
+              SizedBox(height: 12.h),
               Expanded(
                 child: BackGroundProduct(
                   child: Container(

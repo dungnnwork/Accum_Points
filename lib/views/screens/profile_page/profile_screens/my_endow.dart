@@ -1,11 +1,17 @@
 import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
-import 'package:accum_points_app/views/screens/endow_page/components/infor_offer.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/widgets/my_endow_detail.dart';
 import 'package:flutter/material.dart';
 
-class OfferDetails extends StatelessWidget {
-  const OfferDetails({Key? key}) : super(key: key);
+class MyEndow extends StatefulWidget {
+  const MyEndow({Key? key}) : super(key: key);
+
+  @override
+  State<MyEndow> createState() => _MyEndowState();
+}
+
+class _MyEndowState extends State<MyEndow> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,21 +21,15 @@ class OfferDetails extends StatelessWidget {
           Column(
             children: const [
               TitleDetail(
-                title: "Chi tiết ưu đãi",
-                widgetLeft: "assets/images/Path back.png",
-                widgetRight: '',
-              ),
+                  title: "Ưu đãi của tôi",
+                  widgetLeft: "assets/images/Vector heart.png",
+                  widgetRight: ''),
               BackgroundOffer(),
             ],
           ),
-          const InforOffer(),
+          const MyEndowDetail(),
         ],
       ),
     );
   }
 }
-
-/*IconButton(
-                  onPressed: () {},
-              ),
-                  icon:  s*/

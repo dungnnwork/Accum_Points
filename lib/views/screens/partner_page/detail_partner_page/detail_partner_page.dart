@@ -26,7 +26,10 @@ class _DetailPartnerPageState extends State<DetailPartnerPage> {
             children: [
               const TitleDetail(
                 title: 'Chi tiết đối tác',
+                widgetLeft: 'assets/images/Path back.png',
+                widgetRight: 'assets/images/Vector heart.png',
               ),
+              SizedBox(height: 12.h),
               Expanded(
                 child: BackGroundProduct(
                   child: Container(
