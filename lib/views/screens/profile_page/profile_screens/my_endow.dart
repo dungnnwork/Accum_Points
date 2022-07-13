@@ -25,7 +25,7 @@ class _MyEndowState extends State<MyEndow> {
          const  BackgroundOffer(),
               ],
              ),
-             MyEndowDetail(),
+    const    MyEndowDetail(),
         ],
       ),
     );

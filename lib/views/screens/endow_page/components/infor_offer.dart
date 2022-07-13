@@ -283,6 +283,6 @@ class InforOffer extends StatelessWidget {
         const ButtonEndow(),
               ],
             ),
-          );
+    );
   }
 }

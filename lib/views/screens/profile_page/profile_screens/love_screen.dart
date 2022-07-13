@@ -3,7 +3,7 @@ import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/brands.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
-import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/endows_partner.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/widgets/favorite_endow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -105,7 +105,6 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w600,
                             ),
-                            
                             ),
                         ),
                         Tab(
@@ -127,9 +126,7 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                     children: [
                       Container(
                         margin: EdgeInsets.only(top: 20.h),
-                        child: const SingleChildScrollView(
-                          child:  EndowsPartner(),
-                        ),
+                        child: const  FavoriteEndow(),
                       ),
                       Container(
                         margin: EdgeInsets.only(top: 14.h),

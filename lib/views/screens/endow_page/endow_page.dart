@@ -18,17 +18,19 @@ class _EndowPageState extends State<EndowPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Stack(
+       body: Stack(
         children:  [
    const   BackgroundPage(),
            Column(
             children: [
               TitleDetail(
                 title: "Ưu đãi",
-                widget: IconButton(
-                  onPressed: (){},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                  ),
+                widget: widget,
+                // widget: widget,
+                // widget: IconButton(
+                //   onPressed: (){},
+                //   icon: Image.asset("assets/images/Vector heart.png"),
+                //   ),
                 ),
               SizedBox(height: 22.h),
               Container(
@@ -69,8 +71,8 @@ class _EndowPageState extends State<EndowPage> {
                       child: const EndowsPartner(),
                       ),
                   ),
-                  ),
-        ),
+                ),
+              ),
             ],
            ),
         ],
@@ -78,7 +80,5 @@ class _EndowPageState extends State<EndowPage> {
     );
   }
   void search(String query) {
-    
-        
   }
 }

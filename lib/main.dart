@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       builder: ((context, child) => MaterialApp(
-            home: const AccumApp(),
+            // home: const AccumApp(),
+            home: const  Scaffold(
+              body:  AccumApp(),
+            ),
             theme: ThemeData(
               fontFamily: "Open Sans",
             ),

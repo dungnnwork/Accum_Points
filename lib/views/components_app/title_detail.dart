@@ -10,29 +10,42 @@ class TitleDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       padding: EdgeInsets.only(top: 57.h,),
+       padding: EdgeInsets.only(top: 71.h,left: 17.w,right: 18.w),
        child: Row(
            mainAxisAlignment: MainAxisAlignment.spaceBetween,
            children: [
-           IconButton(
-            onPressed: (){
-              Navigator.pop(context);
-            },
-            icon: Image.asset("assets/images/Path back.png"),
+            Container(
+              padding: EdgeInsets.zero,
+              width: 24.w,
+              height: 24.h,
+              child: widget,
             ),
-           Text(
-            title,
-            style:  TextStyle(
-              fontSize: 18.sp,
-              fontWeight: FontWeight.w700,
+          //  IconButton(
+          //   onPressed: (){
+          //     Navigator.pop(context);
+          //   },
+          //   icon: Image.asset("assets/images/Path back.png"),
+          //   ),
+            Text(
+              title,
+                style:  TextStyle(
+                  fontSize: 18.sp,
+                  fontWeight: FontWeight.w700,
+            
+            ),
+            ),
+            Container(
+              padding: EdgeInsets.zero
+              ,
+              width: 24.w,
+              height: 24.h,
+              child: widget,
+            ),
 
-            ),
-            ),
-            // Container(child: widget,),
-            IconButton(
-              onPressed: (){},
-              icon: Image.asset("assets/images/Vector heart.png"),
-              ),
+            // IconButton(
+            //   onPressed: (){},
+            //   icon: Image.asset("assets/images/Vector heart.png"),
+            //   ),
            ],
        ),
     );

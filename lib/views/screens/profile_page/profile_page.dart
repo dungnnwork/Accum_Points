@@ -2,9 +2,9 @@ import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/profile_action.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
-import 'package:accum_points_app/views/screens/profile_page/profile_screens/love_screen/love_screen/love_screen.dart';
-import 'package:accum_points_app/views/screens/profile_page/profile_screens/love_screen/love_screen/my_endow.dart';
-import 'package:accum_points_app/views/screens/profile_page/profile_screens/love_screen/love_screen/point_history.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/love_screen.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/my_endow.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/point_history.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_screens/widgets/user.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
@@ -31,6 +31,7 @@ class _ProfilePageState extends State<ProfilePage> {
                        title: "Cá nhân",
                        widget: Container(),
                       ),
+                    SizedBox(height: 8.h,),  
              const  User(),
                     SizedBox(height: 14.h,), 
              const  BackgroundOffer(),
@@ -40,9 +41,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   padding: EdgeInsets.only(top: 249.h, left: 20.w, right: 18.w),
                   child: Column(
                     children: [
-                    ProfileAction(imageUrl: "assets/icons/icons_profile/ticket-star.png",des: "Ưu đãi của tôi",onTap: (){
+                      ProfileAction(imageUrl: "assets/icons/icons_profile/ticket-star.png",des: "Ưu đãi của tôi",onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const MyEndow()));
-                    },),
+                      },),
               const   DottedLine(lineThickness: 0.1,),
                       SizedBox(height: 15.h,),
               const   ProfileAction(imageUrl: "assets/icons/icons_profile/people.png",des: "Mời bạn bè",),

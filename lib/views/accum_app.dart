@@ -15,13 +15,7 @@ class AccumApp extends StatefulWidget {
 
 class _AccumAppState extends State<AccumApp> {
   int seclectedIndex = 0;
-  List<Widget> pages = [
-    const HomePage(),
-    const EndowPage(),
-    const QRPage(),
-    const PartnerPage(),
-    const ProfilePage(),
-  ];
+  List<Widget> pages = [const HomePage(),const EndowPage(),const QRPage(),const PartnerPage(),const ProfilePage(),];
   @override
   Widget build(BuildContext context) {
     return bodyApp();
