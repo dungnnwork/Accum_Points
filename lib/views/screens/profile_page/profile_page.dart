@@ -27,9 +27,10 @@ class _ProfilePageState extends State<ProfilePage> {
           const BackgroundPage(),
                 Column(
                   children: [
-                    TitleDetail(
-                       title: "Cá nhân",
-                       widget: Container(),
+              const   TitleDetail(
+                        title: "Cá nhân",
+                        widgetLeft: "",
+                        widgetRight: "",
                       ),
                     SizedBox(height: 8.h,),  
              const  User(),

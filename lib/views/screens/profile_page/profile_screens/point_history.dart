@@ -28,12 +28,10 @@ class _PointHistoryState extends State<PointHistory> with TickerProviderStateMix
           const BackgroundPage(),
                 Column(
                   children: [
-                    TitleDetail(
+             const  TitleDetail(
                       title: "Lịch sử điểm",
-                      widget: IconButton(
-                                onPressed: () {},
-                                icon: Image.asset("assets/images/Vector heart.png"),
-                       )  ,
+                      widgetLeft: "assets/images/Path back.png",
+                      widgetRight: "",
                     ),
                     SizedBox(height: 20.h,),
                     Container(

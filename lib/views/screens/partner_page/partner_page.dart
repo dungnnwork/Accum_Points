@@ -117,12 +117,10 @@ class _PartnerPageState extends State<PartnerPage> {
           const BackgroundPage(),
                 Column(
                   children: [
-                     TitleDetail(
-                      title: "Đối tác",
-                      widget: IconButton(
-                        onPressed: (){},
-                        icon: Image.asset("assets/images/Vector heart.png"),
-                        ),
+               const  TitleDetail(
+                        title: "Đối tác",
+                        widgetLeft: "",
+                        widgetRight: "assets/images/Vector heart.png",
                       ),
                                 SizedBox(height: 12.h),
                       Expanded(

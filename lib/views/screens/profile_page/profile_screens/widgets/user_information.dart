@@ -24,7 +24,7 @@ class UserInformation extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfilePage()));
+                      Navigator.pop(context);
                     },
                     icon: Image.asset("assets/images/Path back.png"),color: const Color(0xffa1a1a1),),
                   Text(title!,style: TextStyle(fontSize:   18.sp, fontWeight: FontWeight.w700),),

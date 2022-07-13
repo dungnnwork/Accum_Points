@@ -3,6 +3,7 @@ import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/screens/endow_page/components/infor_offer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class OfferDetails extends StatelessWidget {
@@ -14,15 +15,14 @@ class OfferDetails extends StatelessWidget {
         children: [
     const BackgroundPage(),
           Column(
-            children: [
-              TitleDetail(
+            children:  [
+        const TitleDetail(
                 title: "Chi tiết ưu đãi",
-                widget: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                ),
+                widgetLeft: "assets/images/Path back.png",
+                widgetRight: "assets/images/Vector heart.png",
               ),
-       const  BackgroundOffer(),
+              SizedBox(height: 8.h,),
+      const   BackgroundOffer(),
             ],
           ),
     const InforOffer(),  

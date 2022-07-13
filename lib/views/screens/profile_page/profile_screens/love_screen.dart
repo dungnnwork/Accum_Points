@@ -68,9 +68,10 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
      const BackgroundPage(),
            Column(
             children: [
-               TitleDetail(
+        const TitleDetail(
                 title: "Yêu thích",
-                widget: Container(),
+                widgetLeft: "assets/images/Path back.png",
+                widgetRight: "",
                 ),
                SizedBox(height: 11.h,),
         const  BackgroundOffer(),

@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TitleDetail extends StatelessWidget {
-  final String title;
-  final Widget widget;
-  const TitleDetail({Key? key, required this.title, required this.widget}) : super(key: key);
+  final String? title;
+  final String? widgetLeft;
+  final String? widgetRight;
+  const TitleDetail({Key? key, required this.title, this.widgetLeft, this.widgetRight,  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,38 +15,37 @@ class TitleDetail extends StatelessWidget {
        child: Row(
            mainAxisAlignment: MainAxisAlignment.spaceBetween,
            children: [
-            Container(
-              padding: EdgeInsets.zero,
-              width: 24.w,
-              height: 24.h,
-              child: widget,
+            GestureDetector(
+              onTap: (){
+                Navigator.pop(context);
+                },
+              child: Container(
+                padding: EdgeInsets.zero,
+                width: 24.w,
+                height: 24.h,
+                decoration: BoxDecoration(
+                  image: DecorationImage(image: AssetImage(widgetLeft!),scale: 1.0)
+                ),
+              ),
             ),
-          //  IconButton(
-          //   onPressed: (){
-          //     Navigator.pop(context);
-          //   },
-          //   icon: Image.asset("assets/images/Path back.png"),
-          //   ),
             Text(
-              title,
+              title!,
                 style:  TextStyle(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w700,
-            
             ),
             ),
-            Container(
-              padding: EdgeInsets.zero
-              ,
-              width: 24.w,
-              height: 24.h,
-              child: widget,
+            GestureDetector(
+              onTap: (){},
+              child: Container(
+                padding: EdgeInsets.zero,
+                width: 24.w,
+                height: 24.h,
+                decoration: BoxDecoration(
+                  image: DecorationImage(image: AssetImage(widgetRight!),scale: 1.0)
+                ),
+              ),
             ),
-
-            // IconButton(
-            //   onPressed: (){},
-            //   icon: Image.asset("assets/images/Vector heart.png"),
-            //   ),
            ],
        ),
     );

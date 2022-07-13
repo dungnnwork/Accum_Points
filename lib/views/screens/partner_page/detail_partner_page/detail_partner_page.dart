@@ -27,13 +27,12 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
     const BackgroundPage(),
           Column(
             children: [
-              TitleDetail(
+       const  TitleDetail(
                 title: 'Chi tiết đối tác',
-                widget: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset("assets/images/Vector heart.png"),
-                ),
+                widgetLeft: "assets/images/Path back.png",
+                widgetRight: "assets/images/Vector heart.png",
               ),
+              SizedBox(height: 8.h,),
               Expanded(
                 child: BackGroundProduct(
                   child: Container(

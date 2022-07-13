@@ -22,7 +22,6 @@ class _IndividualState extends State<Individual> {
     Future<void> copyClipBoard() async {
       await Clipboard.setData(ClipboardData(text: copyBroad));
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Đã sao chép")));
-     
     }
     return  Scaffold(
       body: Stack(
@@ -30,7 +29,11 @@ class _IndividualState extends State<Individual> {
      const BackgroundPage(),
            Column(
             children: [
-              TitleDetail(title: "Cá nhân", widget: Container()),
+        const TitleDetail(
+                title: "Cá nhân",
+                widgetLeft: "assets/images/Path back.png",
+                widgetRight: "",
+              ),
               SizedBox(height: 16.h,),
        const  BackgroundOffer(),
             ],

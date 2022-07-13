@@ -23,14 +23,10 @@ class _EndowPageState extends State<EndowPage> {
    const   BackgroundPage(),
            Column(
             children: [
-              TitleDetail(
+        const TitleDetail(
                 title: "Ưu đãi",
-                widget: widget,
-                // widget: widget,
-                // widget: IconButton(
-                //   onPressed: (){},
-                //   icon: Image.asset("assets/images/Vector heart.png"),
-                //   ),
+                widgetLeft: "",
+                widgetRight: "assets/images/Vector heart.png",
                 ),
               SizedBox(height: 22.h),
               Container(
