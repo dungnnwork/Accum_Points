@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 class ProfileAction extends StatelessWidget {
@@ -16,7 +18,7 @@ class ProfileAction extends StatelessWidget {
             children: [
               Image.asset(imageUrl!),
               SizedBox(width: 15.w,),
-              Text(des!, style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600),), 
+              Text(des!, style: desProfile,), 
             ],
           ),
         ),

@@ -1,5 +1,7 @@
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
+
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/partner_page/detail_partner_page/detail_partner_page.dart';
@@ -117,10 +119,10 @@ class _PartnerPageState extends State<PartnerPage> {
           const BackgroundPage(),
                 Column(
                   children: [
-               const  TitleDetail(
+                    TitleDetail(
                         title: "Đối tác",
-                        widgetLeft: "",
-                        widgetRight: "assets/images/Vector heart.png",
+                        widgetLeft: Container(),
+                        widgetRight: Image.asset("assets/images/Vector heart.png"),
                       ),
                                 SizedBox(height: 12.h),
                       Expanded(
@@ -169,21 +171,13 @@ class _PartnerPageState extends State<PartnerPage> {
                                   children: [
                                     Text(
                                       brands[index]['title'],
-                                      style: TextStyle(
-                                        fontSize: 14.sp,
-                                        fontWeight: FontWeight.w600,
-                                        color: kTextTitleBigColors,
-                                      ),
+                                      style: nameBrandSmallBlack,
                                       textAlign: TextAlign.center,
                                     ),
                                     SizedBox(height: 3.h),
                                     Text(
                                       brands[index]['type_andress'],
-                                      style: TextStyle(
-                                        fontSize: 12.sp,
-                                        fontWeight: FontWeight.w600,
-                                        color: kTextPrimaryColors,
-                                      ),
+                                      style: typeBrandSmallYellow,
                                       textAlign: TextAlign.center,
                                     ),
                                   ],

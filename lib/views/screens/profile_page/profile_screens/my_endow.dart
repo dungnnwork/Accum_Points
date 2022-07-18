@@ -22,10 +22,10 @@ class _MyEndowState extends State<MyEndow> {
      const   BackgroundPage(),
              Column(
               children:  [
-         const TitleDetail(
+               TitleDetail(
                  title: "Ưu đãi của tôi",
-                  widgetLeft: "assets/images/Path back.png",
-                  widgetRight: "",
+                  widgetLeft: Image.asset("assets/images/Path back.png"),
+                  widgetRight: Container(),
                   ),
                SizedBox(height: 14.h,),   
          const BackgroundOffer(),

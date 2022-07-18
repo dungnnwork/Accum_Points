@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
@@ -77,7 +79,7 @@ class _HistoryState extends State<History> {
                           children: [
                             Image.asset("assets/images/coffe_house 40_40.png"),
                             SizedBox(width: 15.w,),
-                            Text("The coffee house", style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600),),
+                            Text("The coffee house", style: nameBrandBigBlack,),
                             SizedBox(width: 40.w,),
                             Container(
                               padding: EdgeInsets.only(left: 9.w),
@@ -90,7 +92,7 @@ class _HistoryState extends State<History> {
                                   BoxShadow(
                                     offset:const Offset(0, 4),
                                     blurRadius: 4.w,
-                                    color: const Color(0xff000000).withOpacity(0.1),
+                                    color:  kTextTitleBigColors.withOpacity(0.1),
                                   ),
                                 ],
                               ),

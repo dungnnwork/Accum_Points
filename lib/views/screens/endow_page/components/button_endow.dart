@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
@@ -28,10 +30,7 @@ class _ButtonEndowState extends State<ButtonEndow> {
             Center(
               child: Text(
                 "Xác nhận",
-                style: TextStyle(
-                  fontSize: 16.sp,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: nameBrandBigBlack,
                 ),
             ),
             SizedBox(height: 12.h,),
@@ -46,10 +45,7 @@ class _ButtonEndowState extends State<ButtonEndow> {
               child: Text(
                 "Bạn có muốn sử dụng 999 điểm Bpoint để đổi lấy Ưu đãi này không?",
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: noAccount,
                 ),
             ),
             SizedBox(height: 20.h,),  
@@ -74,11 +70,7 @@ class _ButtonEndowState extends State<ButtonEndow> {
                        child: Center(
                         child: Text(
                           "Hủy",
-                          style: TextStyle(
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.w400,
-                            color: const Color(0xff000000),
-                          ),
+                          style: buttonDialog,
                           ),
                        ),
                        ),
@@ -96,11 +88,7 @@ class _ButtonEndowState extends State<ButtonEndow> {
                       child: Center(
                         child: Text(
                           "Đồng ý",
-                          style: TextStyle(
-                            fontSize: 16.sp,
-                            color:const Color(0xff000000),
-                            fontWeight: FontWeight.w400,
-                          ),
+                          style: buttonDialog,
                           ),
                       ) 
                       ),

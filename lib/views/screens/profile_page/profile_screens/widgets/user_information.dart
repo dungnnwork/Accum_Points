@@ -1,6 +1,6 @@
 import 'package:accum_points_app/views/components_app/background_offer.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
-import 'package:accum_points_app/views/screens/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,13 +12,13 @@ class UserInformation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffffffff),
+      backgroundColor: kBackgroundColors,
       body: Stack(
         children:[
          Column(
           children: [
             Container(
-              padding: EdgeInsets.only( top:  53.h),
+              padding: EdgeInsets.only( top: 57.h),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -27,12 +27,12 @@ class UserInformation extends StatelessWidget {
                       Navigator.pop(context);
                     },
                     icon: Image.asset("assets/images/Path back.png"),color: const Color(0xffa1a1a1),),
-                  Text(title!,style: TextStyle(fontSize:   18.sp, fontWeight: FontWeight.w700),),
+                  Text(title!,style: titlePage,),
                   TextButton(onPressed: (){}, child: Text(correct!, style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400, color: kTextPrimaryColors,))),
                 ],
               ),
             ),
-            SizedBox(height: 8.h,),
+            // SizedBox(height: 8.h,),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 20.w),
               child: Stack(
@@ -100,8 +100,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Họ tên", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("Kim Ngân", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Họ tên", style: descriptAcc,),
+                  Text("Kim Ngân", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -110,8 +110,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hạng", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("Tiêu chuẩn", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Hạng", style: descriptAcc,),
+                  Text("Tiêu chuẩn", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -120,8 +120,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Email", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("kimngan12345@gmail.com", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Email", style: descriptAcc,),
+                  Text("kimngan12345@gmail.com", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -130,8 +130,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Số điện thoại", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("098888666", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Số điện thoại", style: descriptAcc,),
+                  Text("098888666", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -140,8 +140,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Số CMND/CCCD", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("098888666", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Số CMND/CCCD", style: descriptAcc,),
+                  Text("098888666", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -150,8 +150,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Giới tính", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("Nữ", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Giới tính", style: descriptAcc,),
+                  Text("Nữ", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -160,8 +160,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Ngày sinh", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("14/05/1990", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Ngày sinh", style: descriptAcc,),
+                  Text("14/05/1990", style: inforDescriptAcc,),
                 ],
               ),
               SizedBox(height: 10.h,),
@@ -170,8 +170,8 @@ class UserInformation extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Địa chỉ", style: TextStyle(color: const Color(0xff717171), fontSize: 14.sp, fontWeight: FontWeight.w400),),
-                  Text("Duy Tân, Dịch Vọng Hậu, Cầu Giấy", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                  Text("Địa chỉ", style: descriptAcc,),
+                  Text("Duy Tân, Dịch Vọng Hậu, Cầu Giấy", style: inforDescriptAcc,),
                 ],
               ),
             ],

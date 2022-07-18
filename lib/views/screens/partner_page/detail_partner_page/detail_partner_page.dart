@@ -1,5 +1,7 @@
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
+
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:dotted_line/dotted_line.dart';
@@ -27,10 +29,10 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
     const BackgroundPage(),
           Column(
             children: [
-       const  TitleDetail(
+             TitleDetail(
                 title: 'Chi tiết đối tác',
-                widgetLeft: "assets/images/Path back.png",
-                widgetRight: "assets/images/Vector heart.png",
+                widgetLeft: Image.asset("assets/images/Path back.png"),
+                widgetRight: Image.asset("assets/images/Vector heart.png"),
               ),
               SizedBox(height: 8.h,),
               Expanded(
@@ -83,20 +85,12 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                                     children: [
                                       Text(
                                         'The coffee house',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: 16.sp,
-                                          color: kTextTitleBigColors,
-                                        ),
+                                       style: nameBrandBigBlack,
                                       ),
                                       SizedBox(height: 8.h),
                                       Text(
                                         'Nhà hàng',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: 14.sp,
-                                          color: kTextPrimaryColors,
-                                        ),
+                                        style: typeBrandBigYellow,
                                       ),
                                     ],
                                   )
@@ -132,25 +126,19 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                                       Tab(
                                         child: Text(
                                           'Thông tin',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 14.sp),
+                                         style: textStyleTitleEndow,
                                         ),
                                       ),
                                       Tab(
                                         child: Text(
                                           'Cửa hàng',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 14.sp),
+                                          style: textStyleTitleEndow,
                                         ),
                                       ),
                                       Tab(
                                         child: Text(
                                           'Ưu đãi',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 14.sp),
+                                          style: textStyleTitleEndow,
                                         ),
                                       ),
                                     ],
@@ -169,10 +157,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                                       child: SingleChildScrollView(
                                         child: Text(
                                           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text ",
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 13.sp,
-                                              color: kTextTitleBigColors),
+                                          style: textDescript,
                                         ),
                                       ),
                                     ),
@@ -220,13 +205,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                                                       children: [
                                                         Text(
                                                           "The coffee house Ngoại giao đoàn",
-                                                          style: TextStyle(
-                                                              fontSize: 12.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w600,
-                                                              color:
-                                                                  kTextTitleBigColors),
+                                                          style: addressBrand,
                                                         ),
                                                         Row(
                                                           children: [
@@ -240,14 +219,7 @@ class _DetailPartnerPageState extends State<DetailPartnerPage>
                                                             ),
                                                             Text(
                                                               "Số 6, the are many variations of passages ",
-                                                              style: TextStyle(
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w400,
-                                                                  fontSize:
-                                                                      12.sp,
-                                                                  color:
-                                                                      kTextTitleBigColors),
+                                                             style: desAddress,
                                                             ),
                                                           ],
                                                         ),

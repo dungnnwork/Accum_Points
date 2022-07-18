@@ -1,4 +1,5 @@
-import 'package:accum_points_app/views/dependents_app/constants.dart';
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/screens/partner_page/detail_partner_page/detail_partner_page.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
@@ -45,19 +46,21 @@ class Brand extends StatelessWidget {
                           children: [
                             Text(
                               nameBrand!,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16.sp,
-                              ),
+                              style: nameBrandBigYellow,
+                              // style: TextStyle(
+                              //   fontWeight: FontWeight.w600,
+                              //   fontSize: 16.sp,
+                              // ),
                               ),
                             SizedBox(height: 8.h,),  
                             Text(
                               typeBrand!,
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                fontWeight: FontWeight.w600,
-                                color: kTextPrimaryColors,
-                              ),
+                              style: typeBrandBig,
+                              // style: TextStyle(
+                              //   fontSize: 14.sp,
+                              //   fontWeight: FontWeight.w600,
+                              //   color: kTextPrimaryColors,
+                              // ),
                               ),
                           ],
                         ),

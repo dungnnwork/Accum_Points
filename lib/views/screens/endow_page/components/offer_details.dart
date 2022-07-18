@@ -16,10 +16,10 @@ class OfferDetails extends StatelessWidget {
     const BackgroundPage(),
           Column(
             children:  [
-        const TitleDetail(
+             TitleDetail(
                 title: "Chi tiết ưu đãi",
-                widgetLeft: "assets/images/Path back.png",
-                widgetRight: "assets/images/Vector heart.png",
+                widgetLeft: Image.asset("assets/images/Path back.png"),
+                widgetRight: Image.asset("assets/images/Vector heart.png"),
               ),
               SizedBox(height: 8.h,),
       const   BackgroundOffer(),

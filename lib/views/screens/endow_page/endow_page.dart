@@ -1,5 +1,6 @@
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/background_product.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/screens/home_page/widgets/product_home_page/components/endows_partner.dart';
 import 'package:flutter/material.dart';
@@ -23,10 +24,10 @@ class _EndowPageState extends State<EndowPage> {
    const   BackgroundPage(),
            Column(
             children: [
-        const TitleDetail(
+              TitleDetail(
                 title: "Ưu đãi",
-                widgetLeft: "",
-                widgetRight: "assets/images/Vector heart.png",
+                widgetLeft: Container(),
+                widgetRight: Image.asset("assets/images/Vector heart.png"),
                 ),
               SizedBox(height: 22.h),
               Container(
@@ -50,10 +51,7 @@ class _EndowPageState extends State<EndowPage> {
                     focusedBorder: InputBorder.none,
                     prefixIcon: Image.asset("assets/images/search-status.png", color: const Color(0xff292d32).withOpacity(0.4),),
                     hintText: 'Tìm kiếm',
-                    hintStyle:  TextStyle(
-                      fontSize: 16.sp,
-                      fontWeight: FontWeight.w400,
-                    ),
+                    hintStyle: hinTextStyle,
                     suffixIcon: Image.asset("assets/images/x-circle.png"),
                   ),
                 ),

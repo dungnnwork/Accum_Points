@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/partner_page/detail_partner_page/detail_partner_page.dart';
 import 'package:flutter/material.dart';
@@ -75,11 +77,7 @@ class BrandsPartner extends StatelessWidget {
                         ),
                         child: Text(
                           brands[index]['title'],
-                          style: TextStyle(
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w600,
-                            color: kTextTitleBigColors,
-                          ),
+                          style: nameBrandBigYellow,
                           textAlign: TextAlign.center,
                         ),
                       ),

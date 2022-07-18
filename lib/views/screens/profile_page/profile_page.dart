@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
+
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -27,10 +28,10 @@ class _ProfilePageState extends State<ProfilePage> {
           const BackgroundPage(),
                 Column(
                   children: [
-              const   TitleDetail(
+                     TitleDetail(
                         title: "Cá nhân",
-                        widgetLeft: "",
-                        widgetRight: "",
+                        widgetLeft: Container(),
+                        widgetRight: Container(),
                       ),
                     SizedBox(height: 8.h,),  
              const  User(),

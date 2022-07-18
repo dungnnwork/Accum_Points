@@ -1,6 +1,7 @@
 
 import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:flutter/material.dart';
@@ -19,8 +20,8 @@ class _IndividualState extends State<Individual> {
   @override
   Widget build(BuildContext context) {
     String copyBroad = "098888666";
-    Future<void> copyClipBoard() async {
-      await Clipboard.setData(ClipboardData(text: copyBroad));
+    Future<void> copyClipBoard() async  {
+      Clipboard.setData(ClipboardData(text: copyBroad));
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Đã sao chép")));
     }
     return  Scaffold(
@@ -29,10 +30,10 @@ class _IndividualState extends State<Individual> {
      const BackgroundPage(),
            Column(
             children: [
-        const TitleDetail(
+              TitleDetail(
                 title: "Cá nhân",
-                widgetLeft: "assets/images/Path back.png",
-                widgetRight: "",
+                widgetLeft: Image.asset("assets/images/Path back.png"),
+                widgetRight: Container(),
               ),
               SizedBox(height: 16.h,),
        const  BackgroundOffer(),
@@ -57,7 +58,7 @@ class _IndividualState extends State<Individual> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Mã chia sẻ", style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700,),),
+                    Text("Mã chia sẻ", style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700,color: const Color(0xff263238)),),
                     SizedBox(height: 4.h,),
                     Container(
                       padding: EdgeInsets.only(left: 18.w, right: 12.w),
@@ -65,7 +66,7 @@ class _IndividualState extends State<Individual> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.w),
                         border: Border.all(
-                          color:const  Color(0xffffd233),
+                          color: kbuttonBackgroundColors,
                         ),
                       ),
                       child: Row(
@@ -105,7 +106,7 @@ class _IndividualState extends State<Individual> {
                           color: const Color(0xffffd233),
                         ),
                         child: Center(
-                          child: Text("Chia sẻ mã giới thiệu", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),),
+                          child: Text("Chia sẻ mã giới thiệu", style: noAccount),
                         ),
                       ),
                     ),

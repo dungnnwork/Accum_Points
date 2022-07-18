@@ -1,11 +1,13 @@
 
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TitleDetail extends StatelessWidget {
   final String? title;
-  final String? widgetLeft;
-  final String? widgetRight;
+  final Widget? widgetLeft;
+  final Widget? widgetRight;
   const TitleDetail({Key? key, required this.title, this.widgetLeft, this.widgetRight,  }) : super(key: key);
 
   @override
@@ -23,17 +25,12 @@ class TitleDetail extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 width: 24.w,
                 height: 24.h,
-                decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage(widgetLeft!),scale: 1.0)
-                ),
+                child: widgetLeft,
               ),
             ),
             Text(
               title!,
-                style:  TextStyle(
-                  fontSize: 18.sp,
-                  fontWeight: FontWeight.w700,
-            ),
+              style: titlePage,
             ),
             GestureDetector(
               onTap: (){},
@@ -41,9 +38,7 @@ class TitleDetail extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 width: 24.w,
                 height: 24.h,
-                decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage(widgetRight!),scale: 1.0)
-                ),
+                child: widgetRight,
               ),
             ),
            ],

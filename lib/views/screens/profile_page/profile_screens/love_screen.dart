@@ -1,6 +1,7 @@
 import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
 import 'package:accum_points_app/views/components_app/brands.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_screens/widgets/favorite_endow.dart';
@@ -68,10 +69,10 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
      const BackgroundPage(),
            Column(
             children: [
-        const TitleDetail(
+             TitleDetail(
                 title: "Yêu thích",
-                widgetLeft: "assets/images/Path back.png",
-                widgetRight: "",
+                widgetLeft: Image.asset("assets/images/Path back.png"),
+                widgetRight: Container(),
                 ),
                SizedBox(height: 11.h,),
         const  BackgroundOffer(),
@@ -102,19 +103,13 @@ class _LoveScrennState extends State<LoveScrenn>  with TickerProviderStateMixin{
                         Tab(
                           child: Text(
                             "Ưu đãi",
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: nameBrandSmallBlack,
                             ),
                         ),
                         Tab(
                           child: Text(
                             "Thương hiệu",
-                            style: TextStyle(
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w600,
-                            ),
+                           style: nameBrandSmallBlack,
                           ),
                         ),
                       ],

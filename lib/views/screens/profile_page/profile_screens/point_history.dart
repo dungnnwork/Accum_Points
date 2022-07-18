@@ -1,6 +1,7 @@
 
 import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/components_app/background_page.dart';
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/components_app/title_detail.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_screens/widgets/history_widget.dart';
@@ -28,10 +29,10 @@ class _PointHistoryState extends State<PointHistory> with TickerProviderStateMix
           const BackgroundPage(),
                 Column(
                   children: [
-             const  TitleDetail(
+                    TitleDetail(
                       title: "Lịch sử điểm",
-                      widgetLeft: "assets/images/Path back.png",
-                      widgetRight: "",
+                      widgetLeft: Image.asset("assets/images/Path back.png"),
+                      widgetRight: Container(),
                     ),
                     SizedBox(height: 20.h,),
                     Container(
@@ -91,10 +92,10 @@ class _PointHistoryState extends State<PointHistory> with TickerProviderStateMix
                             ),
                             tabs: [
                               Tab(
-                                child: Text("Tích điểm", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),),
+                                child: Text("Tích điểm", style: nameBrandSmallBlack,),
                               ),
                               Tab(
-                                child: Text("Tiêu điểm",style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),),
+                                child: Text("Tiêu điểm",style: nameBrandSmallBlack,),
                               ),
                             ],
                             ),

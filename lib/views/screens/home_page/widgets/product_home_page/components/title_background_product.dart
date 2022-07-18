@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../dependents_app/constants.dart';
@@ -30,11 +32,7 @@ class TitleBackGroundProduct extends StatelessWidget {
             onTap: onPress as Function(),
             child: Text(
               "Xem tất cả",
-              style: TextStyle(
-                color: kTextPrimaryColors,
-                fontSize: 12.sp,
-                fontWeight: FontWeight.w400,
-              ),
+              style: viewALL,
             ),
           ),
         ],

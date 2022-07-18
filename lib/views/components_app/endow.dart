@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/endow_page/components/offer_details.dart';
 import 'package:flutter/material.dart';
@@ -76,12 +78,7 @@ class Endow extends StatelessWidget {
                       children: [
                         Text(
                           titleEndow!,
-                          style: TextStyle(
-                            overflow: TextOverflow.ellipsis,
-                            color: kTextTitleBigColors,
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: textStyleTitleEndow,
                         ),
                         SizedBox(
                           height: 6.h,
@@ -101,9 +98,7 @@ class Endow extends StatelessWidget {
                           ),
                           child: Text(
                             nameBrandEndow!,
-                            style: const TextStyle(
-                              color: kTextPrimaryColors,
-                            ),
+                            style: nameBrandBigYellow,
                           ),
                         ),
                       ],
@@ -114,11 +109,7 @@ class Endow extends StatelessWidget {
                       children: [
                         Text(
                           '$numberPoints',
-                          style: TextStyle(
-                            color: kbuttonBackgroundColors,
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: textNumberPoints,
                         ),
                         SizedBox(width: 2.w),
                         Image.asset(

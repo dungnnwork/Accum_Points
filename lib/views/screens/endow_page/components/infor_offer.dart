@@ -1,3 +1,5 @@
+
+import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
 import 'package:accum_points_app/views/screens/endow_page/components/button_endow.dart';
 import 'package:dotted_border/dotted_border.dart';
@@ -61,39 +63,26 @@ class InforOffer extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Ưu đãi giảm 15%",
-                                    style: TextStyle(
-                                      fontSize: 16.sp,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                    style: nameBrandBigBlack,
                                   ),
                                   SizedBox(height: 4.h,),
                                   Text(
                                     "The coffee house",
-                                    style: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w600,
-                                      color: kTextPrimaryColors,
-                                    ),
+                                    style: nameBrandBigYellow,
                                   ),
                                   SizedBox(height: 10.h,),
                                   Row(
                                     children: [
                                       Text(
                                         "Thời hạn:",
-                                        style: TextStyle(
-                                          fontSize: 12.sp,
-                                          fontWeight: FontWeight.w400,
-                                        ),
+                                        style: address,
                                       ),
                                       SizedBox(
                                         width: 12.w,
                                       ),
                                       Text(
                                         "30/06/2022",
-                                        style: TextStyle(
-                                          fontSize: 12.sp,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                        style: addressBrand,
                                       )
                                     ],
                                   ),
@@ -138,10 +127,7 @@ class InforOffer extends StatelessWidget {
                 ),
                 Text(
                   "Chi tiết",
-                  style: TextStyle(
-                    fontSize: 14.sp,
-                    fontWeight: FontWeight.w600,
-                  ),
+                 style: nameBrandSmallBlack,
                 ),
                 SizedBox(
                   height: 8.h,
@@ -159,10 +145,7 @@ class InforOffer extends StatelessWidget {
                 ),
                 Text(
                   "Điều kiện áp dụng",
-                  style: TextStyle(
-                    fontSize: 14.sp,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: nameBrandSmallBlack,
                 ),
                 SizedBox(
                   height: 8.h,
@@ -180,10 +163,7 @@ class InforOffer extends StatelessWidget {
                 ),
                 Text(
                   "Địa điểm áp dụng",
-                  style: TextStyle(
-                    fontSize: 14.sp,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: nameBrandSmallBlack,
                 ),
                 SizedBox(
                   height: 10.h,
@@ -209,10 +189,7 @@ class InforOffer extends StatelessWidget {
                           children: [
                             Text(
                               "The coffee house Duy Tân",
-                              style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              style: addressBrand,
                             ),
                             Row(
                               children: [
@@ -253,10 +230,7 @@ class InforOffer extends StatelessWidget {
                           children: [
                             Text(
                               "The coffee house Ngoại giao đoàn",
-                              style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              style: addressBrand,
                             ),
                             Row(
                               children: [
