@@ -1,6 +1,7 @@
 import 'package:accum_points_app/views/components_app/background_offer.dart';
 import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/dependents_app/constants.dart';
+import 'package:accum_points_app/views/screens/profile_page/profile_screens/widgets/image_profiled.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,7 +29,7 @@ class UserInformation extends StatelessWidget {
                     },
                     icon: Image.asset("assets/images/Path back.png"),color: const Color(0xffa1a1a1),),
                   Text(title!,style: titlePage,),
-                  TextButton(onPressed: (){}, child: Text(correct!, style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400, color: kTextPrimaryColors,))),
+                  TextButton(onPressed: (){}, child: Text(correct!, style: textEditProfile),),
                 ],
               ),
             ),
@@ -43,25 +44,67 @@ class UserInformation extends StatelessWidget {
                     left: 118.w,
                     right: 117.w,
                     bottom: 81.h,
-                    child: Container(
-                      width: 100.w,
-                      height: 100.h,
-                      decoration:  BoxDecoration(
-                        color:const  Color(0xffffffff),
-                          boxShadow: [
-                            BoxShadow(
-                              offset: const Offset(0, 4),
-                              color:const  Color(0xffa4a4a4).withOpacity(0.25),
-                            ),
-                          ],
-                        shape: BoxShape.circle,
-                        image: const  DecorationImage(
-                          image: AssetImage("assets/images/avatar.jpg"),
-                          fit: BoxFit.cover,
-                          ),
-                      ),
-                    ),
+                    child: const ImageProfile(),
+                    // child: Stack(
+                    //   children: [
+                    //     Container(
+                    //       width: 100.w,
+                    //       height: 100.h,
+                    //       decoration:  BoxDecoration(
+                    //         color:const  Color(0xffffffff),
+                    //         boxShadow: [
+                    //           BoxShadow(
+                    //            offset: const Offset(0, 4),
+                    //            color:const  Color(0xffa4a4a4).withOpacity(0.25),
+                    //           ),
+                    //         ],
+                    //         shape: BoxShape.circle,
+                    //         image: const  DecorationImage(
+                    //           image: AssetImage("assets/images/avatar.jpg"),
+                    //           fit: BoxFit.cover,
+                    //         ),
+                    //      ),
+                    //     ),
+                    //     Positioned(
+                    //       top: 74.h,
+                    //       right: 7.w,
+                    //       left: 67.w,
+                    //       child: Container(
+                    //         width: 26.w,
+                    //         height: 26.w,
+                    //         decoration: BoxDecoration(
+                    //           color: Colors.red,
+                    //           shape: BoxShape.circle,
+                    //         ),
+                    //         )
+                    //       ),
+                    //   ],
+                    // ),
                   ),
+                  // Positioned(
+                  //   top: 7.h,
+                  //   left: 118.w,
+                  //   right: 117.w,
+                  //   bottom: 81.h,
+                  //   child: Container(
+                  //     width: 100.w,
+                  //     height: 100.h,
+                  //     decoration:  BoxDecoration(
+                  //       color:const  Color(0xffffffff),
+                  //         boxShadow: [
+                  //           BoxShadow(
+                  //             offset: const Offset(0, 4),
+                  //             color:const  Color(0xffa4a4a4).withOpacity(0.25),
+                  //           ),
+                  //         ],
+                  //       shape: BoxShape.circle,
+                  //       image: const  DecorationImage(
+                  //         image: AssetImage("assets/images/avatar.jpg"),
+                  //         fit: BoxFit.cover,
+                  //         ),
+                  //     ),
+                  //   ),
+                  // ),
                   Positioned(
                     left: 92.w,
                     right: 91.w,

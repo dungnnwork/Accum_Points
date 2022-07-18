@@ -1,4 +1,3 @@
-
 import 'package:accum_points_app/views/dependents_app/text_style.dart';
 import 'package:accum_points_app/views/screens/profile_page/profile_screens/person_information.dart';
 import 'package:flutter/material.dart';
@@ -11,14 +10,19 @@ class Welcome extends StatelessWidget {
   final String numberPoints;
   final String avatarUser;
   const Welcome({
-    Key? key, required this.userName, required this.rating, required this.numberPoints,required this.avatarUser,
+    Key? key,
+    required this.userName,
+    required this.rating,
+    required this.numberPoints,
+    required this.avatarUser,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const PersonInformation()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const PersonInformation()));
       },
       child: Container(
         padding: EdgeInsets.only(
@@ -41,11 +45,11 @@ class Welcome extends StatelessWidget {
                       color: const Color(0xffA4A4A4).withOpacity(0.25)),
                 ],
                 border: Border.all(
-                    width: 375.w,
-                    color: kBackgroundColors,
-                    style: BorderStyle.solid,
-                    ),
-                image:  DecorationImage(
+                  width: 375.w,
+                  color: kBackgroundColors,
+                  style: BorderStyle.solid,
+                ),
+                image: DecorationImage(
                   image: AssetImage(avatarUser),
                 ),
               ),
@@ -68,11 +72,11 @@ class Welcome extends StatelessWidget {
                     SizedBox(width: 12.w),
                     Container(
                       padding: EdgeInsets.only(
-                          top: 3.h,
-                          left: 9.w,
-                          right: 6.5.h,
-                          bottom: 3.h,
-                          ),
+                        top: 3.h,
+                        left: 9.w,
+                        right: 6.5.h,
+                        bottom: 3.h,
+                      ),
                       decoration: BoxDecoration(
                         color: kBackgroundColors,
                         borderRadius:

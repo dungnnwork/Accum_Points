@@ -19,7 +19,7 @@ class QRScan extends StatefulWidget {
 class _QRScanState extends State<QRScan> {
   @override
   Widget build(BuildContext context){
-    return Scaffold();
+    return const Scaffold();
   }
 }
 //   Barcode? result;

@@ -46,21 +46,12 @@ class Brand extends StatelessWidget {
                           children: [
                             Text(
                               nameBrand!,
-                              style: nameBrandBigYellow,
-                              // style: TextStyle(
-                              //   fontWeight: FontWeight.w600,
-                              //   fontSize: 16.sp,
-                              // ),
+                              style: nameBrandBigBlack,
                               ),
                             SizedBox(height: 8.h,),  
                             Text(
                               typeBrand!,
                               style: typeBrandBig,
-                              // style: TextStyle(
-                              //   fontSize: 14.sp,
-                              //   fontWeight: FontWeight.w600,
-                              //   color: kTextPrimaryColors,
-                              // ),
                               ),
                           ],
                         ),

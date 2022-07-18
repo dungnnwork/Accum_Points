@@ -17,17 +17,17 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Stack(
         children: [
-    const BackgroundPage(),
+          const BackgroundPage(),
           Column(
             children: [
-        const Welcome(
-              userName: "Kim Ngân",
-              rating: "Tiêu chuẩn",
-              numberPoints: "1000",
-              avatarUser: "assets/images/avatar.jpg",
-        ),
+              const Welcome(
+                userName: "Kim Ngân",
+                rating: "Tiêu chuẩn",
+                numberPoints: "1000",
+                avatarUser: "assets/images/avatar.jpg",
+              ),
               SizedBox(height: 13.h),
-        const Expanded(
+              const Expanded(
                 child: CustomScrollView(
                   slivers: [
                     SliverToBoxAdapter(child: BannerItem()),
